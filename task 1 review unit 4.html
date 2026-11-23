@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Phiếu bổ trợ Writing Task 1 – Literacy rate by region and gender</title>
+<!-- Ghi chú cho giáo viên: mã mở khoá Phần B là GV2026 -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--p:#08397A;--a:#FFBD59;--bg:#F6F8FB;--card:#FFFFFF;--line:#E2E8F0;--muted:#5B6B82;--ok:#1E8E5A;--hl1:#CFE3FF;--hl2:#FFE3A8;--hl3:#C9F0D6}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{background:var(--bg);color:#1B2A41;font-family:'Mulish',system-ui,-apple-system,sans-serif;font-size:16px;line-height:1.65}
+.wrap{max-width:880px;margin:0 auto;padding:16px 16px 60px}
+header.top{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.97);border-bottom:1px solid var(--line);box-shadow:0 2px 10px rgba(8,57,122,.06)}
+header.top .in{max-width:880px;margin:0 auto;padding:10px 16px;display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center;justify-content:space-between}
+.ttl{font-weight:800;color:var(--p);font-size:17px;line-height:1.3}
+.goals{font-size:13.5px;color:var(--muted);line-height:1.4}
+.timer{display:flex;align-items:center;gap:6px}
+.clock{font-variant-numeric:tabular-nums;font-weight:800;font-size:20px;color:var(--p);background:#EEF3FA;border-radius:8px;padding:2px 10px;min-width:78px;text-align:center}
+.clock.warn{background:#FFF1DA;color:#A35A00}
+.btn{font-family:inherit;font-size:14px;font-weight:700;border:1px solid var(--line);background:#fff;color:var(--p);border-radius:8px;padding:6px 12px;cursor:pointer}
+.btn:hover{border-color:var(--p)}
+.btn.pri{background:var(--p);color:#fff;border-color:var(--p)}
+.btn.pri:hover{background:#0B4A9E}
+.btn.ghost{background:transparent;border-color:transparent;color:var(--muted);font-weight:600}
+.prog{width:100%;display:flex;align-items:center;gap:10px}
+.bar{flex:1;height:8px;background:#E8EEF6;border-radius:99px;overflow:hidden}
+.bar>i{display:block;height:100%;width:0;background:var(--p);transition:width .3s}
+.dots{display:flex;gap:6px;font-size:12px;font-weight:700}
+.dots span{padding:1px 8px;border-radius:99px;background:#E8EEF6;color:var(--muted)}
+.dots span.done{background:var(--p);color:#fff}
+.namebox{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin:18px 0 0;display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.namebox input{flex:1;min-width:200px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px 22px;margin:18px 0}
+.card h2{margin:0 0 4px;color:var(--p);font-size:21px;line-height:1.35;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.card h3{margin:20px 0 6px;color:var(--p);font-size:17px}
+.badge{background:var(--a);color:#3D2A00;font-size:13px;font-weight:800;border-radius:99px;padding:2px 10px}
+.tip{background:#FFF6E6;border-left:5px solid var(--a);border-radius:8px;padding:10px 14px;margin:12px 0}
+.tip b{color:#7A4B00}
+.inst{color:var(--muted);font-size:15px;margin:6px 0 10px}
+.q{border-top:1px dashed var(--line);padding:12px 0}
+.q:first-of-type{border-top:none}
+.qn{font-weight:800;color:var(--p);margin-right:4px}
+.opt{display:flex;gap:10px;align-items:flex-start;border:1px solid var(--line);border-radius:10px;padding:8px 12px;margin:6px 0;cursor:pointer;background:#fff}
+.opt:hover{border-color:#9DB4D6}
+.opt input{margin-top:6px;accent-color:var(--p)}
+.opt:has(input:checked){border-color:var(--p);background:#F0F5FC}
+input[type=text],textarea,select{font-family:inherit;font-size:16px;border:1px solid #CBD5E1;border-radius:8px;padding:7px 10px;background:#fff;color:#1B2A41;width:100%}
+input[type=text]:focus,textarea:focus,select:focus{outline:2px solid #9DB4D6;border-color:var(--p)}
+textarea{resize:vertical;min-height:64px;line-height:1.6;overflow:hidden}
+.short{margin-top:6px}
+table.t{width:100%;border-collapse:collapse;margin:8px 0;font-size:15px}
+table.t th,table.t td{border:1px solid var(--line);padding:7px 9px;text-align:left;vertical-align:top}
+table.t th{background:#EEF3FA;color:var(--p)}
+table.t td select{min-width:150px}
+.data{background:#F8FAFD;border:1px solid var(--line);border-radius:10px;padding:10px 14px;margin:8px 0;font-size:15px}
+.err{background:#FDECEC;border-radius:4px;padding:0 4px;font-weight:700}
+.hint{color:var(--muted);font-size:13.5px;font-style:italic}
+.kw{display:inline-block;background:#EEF3FA;color:var(--p);border-radius:6px;padding:0 8px;margin:2px 4px 2px 0;font-weight:700;font-size:14px}
+.modes{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}
+.modes button{font-family:inherit;font-size:13.5px;font-weight:700;border-radius:99px;border:2px solid transparent;padding:4px 12px;cursor:pointer}
+.modes button.on{border-color:var(--p)}
+.m1{background:var(--hl1)}.m2{background:var(--hl2)}.m3{background:var(--hl3)}.m0{background:#fff;border:1px solid var(--line)!important}
+.passage{background:#FBFCFE;border:1px solid var(--line);border-radius:10px;padding:14px 16px;font-size:16.5px;line-height:2}
+.passage span.w{cursor:pointer;border-radius:4px;padding:1px 1px}
+.passage span.w:hover{outline:1px dashed #9DB4D6}
+.passage span.h1{background:var(--hl1)}.passage span.h2{background:var(--hl2)}.passage span.h3{background:var(--hl3)}
+.wc{font-size:13px;color:var(--muted);text-align:right}
+.wcTotal{font-weight:800;color:var(--p)}
+.sub{width:100%;border-collapse:collapse;margin:8px 0;font-size:15px}
+.sub td{border:1px solid var(--line);padding:6px 9px;vertical-align:middle;text-align:center}
+.sub td.c{background:#F8FAFD}
+.audit{background:#F0F5FC;border-radius:10px;padding:12px 16px;margin-top:16px}
+.audit label{display:flex;gap:10px;align-items:flex-start;margin:6px 0;cursor:pointer}
+.audit input{margin-top:6px;width:18px;height:18px;accent-color:var(--p)}
+#submission-panel{margin-top:18px;border:2px solid var(--p);border-radius:12px;padding:16px 18px;background:#F7FAFE}
+.sp-title{font-weight:800;color:var(--p);font-size:17px;margin-bottom:8px}
+.sp-btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
+#btnSubmit{font-weight:800;font-size:16px;padding:10px 20px;background:var(--p);color:#fff;border-color:var(--p)}
+#btnSubmit.ready{box-shadow:0 0 0 4px rgba(255,189,89,.8)}
+#btnSubmit:disabled{cursor:not-allowed;opacity:.45}
+.status{margin-top:10px;font-weight:700;font-size:15px;min-height:1.4em}
+.status.pending{color:var(--p)}.status.ok{color:var(--ok)}.status.err{color:#C0392B}
+.toast{position:fixed;left:50%;bottom:22px;transform:translateX(-50%);background:var(--p);color:#fff;padding:10px 18px;border-radius:10px;font-weight:700;opacity:0;pointer-events:none;transition:opacity .25s;z-index:50;max-width:90vw;text-align:center}
+.toast.show{opacity:1}
+.foot{margin:40px 0 0;text-align:center}
+#teacherZone{display:none;margin-top:10px;gap:8px;justify-content:center;align-items:center;flex-wrap:wrap}
+#teacherZone input{width:170px}
+#partB{display:none;margin-top:30px;border-top:4px solid var(--p);padding-top:10px}
+#partB .card{border-color:#C9D6EA}
+#partB h1{color:var(--p);font-size:22px}
+#partB li{margin:4px 0}
+.ans{background:#F1FAF5;border-left:4px solid var(--ok);padding:8px 12px;border-radius:6px;margin:6px 0}
+.flag{background:#FDF2F2;border-left:4px solid #C0392B;padding:8px 12px;border-radius:6px;margin:6px 0}
+.small{font-size:14px;color:var(--muted)}
+@media (max-width:600px){.card{padding:16px 14px}.clock{font-size:18px}.ttl{font-size:15.5px}}
+@media print{
+ header.top .timer,header.top .prog,.btn,.modes,.foot,#partB,#teacherZone,.toast,#submission-panel{display:none!important}
+ header.top{position:static;box-shadow:none;border:none}
+ body{background:#fff;font-size:12.5pt}
+ .card{break-inside:avoid-page;border:1px solid #999;margin:10px 0}
+ textarea{overflow:visible;border:1px solid #999}
+ input[type=text],select,textarea{border:1px solid #999}
+ @page{size:A4;margin:14mm}
+}
+
+</style>
+</head>
+<body data-key="mindset1_t1_literacy_2011" data-lesson="Mindset 1 · Writing Task 1: Literacy rate by region and gender (2011)">
+<header class="top"><div class="in">
+  <div><div class="ttl">Mindset 1 · Writing Task 1: Literacy rate by region and gender (2011)</div><div class="goals">Mục tiêu: ① Viết đúng chủ ngữ số liệu · ② Dùng đúng cấu trúc số liệu &amp; so sánh</div></div>
+  <div class="timer"><span class="clock" id="clock">30:00</span>
+    <button class="btn pri" id="tStart" type="button">Bắt đầu</button>
+    <button class="btn" id="tPause" type="button">Tạm dừng</button>
+    <button class="btn" id="tReset" type="button">Đặt lại</button></div>
+  <div class="prog"><div class="bar"><i></i></div>
+    <div class="dots"><span>C1</span><span>C2</span><span>C3</span><span>C4</span></div></div>
+</div></header>
+<main class="wrap">
+<section class="card" data-stage="1" data-title="CHẶNG 1 – Bắt bệnh lỗi quen thuộc">
+<h2>Chặng 1: “Bắt bệnh” lỗi quen thuộc <span class="badge">5 phút</span></h2>
+<div class="tip"><b>Mẹo nhớ nhanh:</b><br>
+① Chủ ngữ là <b>con số</b>, không phải tên nơi chốn: <i>“Central Asia was 99%”</i> ✗ → <i>“<u>The literacy rate in Central Asia</u> was 99%”</i> ✓<br>
+② Biểu đồ chỉ có 1 năm (2011): dùng <b>was / stood at + con số</b>, <b>a rate of + %</b>, <b>the figure for + nhóm</b>. KHÔNG dùng <i>increased / decreased</i>. So sánh tỷ lệ với tỷ lệ: <b>higher than <u>that for</u> women</b>.</div>
+<p class="inst">Mỗi câu có 2 phiên bản. Chọn câu <b>ĐÚNG</b>, rồi ghi ngắn chỗ khác nhau giữa 2 câu.</p>
+
+<div class="q" data-q="s1_1" data-type="radio" data-label="Câu 1 – chọn">
+ <div><span class="qn">1.</span></div>
+ <label class="opt"><input type="radio" name="s1_1" value="A"><span>A. Central Asia was about 99%.</span></label>
+ <label class="opt"><input type="radio" name="s1_1" value="B"><span>B. The literacy rate in Central Asia was about 99%.</span></label>
+ <input type="text" class="short" data-q="s1_1n" data-type="text" data-label="Câu 1 – chỗ khác nhau" placeholder="Chỗ khác nhau là: ...">
+</div>
+<div class="q" data-q="s1_2" data-type="radio" data-label="Câu 2 – chọn">
+ <div><span class="qn">2.</span></div>
+ <label class="opt"><input type="radio" name="s1_2" value="A"><span>A. The literacy rate for women in the Arab states stood at 78%.</span></label>
+ <label class="opt"><input type="radio" name="s1_2" value="B"><span>B. Women in the Arab states stood at 78%.</span></label>
+ <input type="text" class="short" data-q="s1_2n" data-type="text" data-label="Câu 2 – chỗ khác nhau" placeholder="Chỗ khác nhau là: ...">
+</div>
+<div class="q" data-q="s1_3" data-type="radio" data-label="Câu 3 – chọn">
+ <div><span class="qn">3.</span></div>
+ <label class="opt"><input type="radio" name="s1_3" value="A"><span>A. Men in South and West Asia had a literacy rate at 81%.</span></label>
+ <label class="opt"><input type="radio" name="s1_3" value="B"><span>B. Men in South and West Asia had a literacy rate of 81%.</span></label>
+ <input type="text" class="short" data-q="s1_3n" data-type="text" data-label="Câu 3 – chỗ khác nhau" placeholder="Chỗ khác nhau là: ...">
+</div>
+<div class="q" data-q="s1_4" data-type="radio" data-label="Câu 4 – chọn">
+ <div><span class="qn">4.</span></div>
+ <label class="opt"><input type="radio" name="s1_4" value="A"><span>A. In 2011, the figure for males in Latin America/Caribbean was 97%.</span></label>
+ <label class="opt"><input type="radio" name="s1_4" value="B"><span>B. In 2011, the figure of males in Latin America/Caribbean increased to 97%.</span></label>
+ <input type="text" class="short" data-q="s1_4n" data-type="text" data-label="Câu 4 – chỗ khác nhau" placeholder="Chỗ khác nhau là: ...">
+</div>
+<div class="q" data-q="s1_5" data-type="radio" data-label="Câu 5 – chọn">
+ <div><span class="qn">5.</span></div>
+ <label class="opt"><input type="radio" name="s1_5" value="A"><span>A. In Sub-Saharan Africa, the literacy rate for men was higher than women.</span></label>
+ <label class="opt"><input type="radio" name="s1_5" value="B"><span>B. In Sub-Saharan Africa, the literacy rate for men was higher than that for women.</span></label>
+ <input type="text" class="short" data-q="s1_5n" data-type="text" data-label="Câu 5 – chỗ khác nhau" placeholder="Chỗ khác nhau là: ...">
+</div>
+</section>
+
+<section class="card" data-stage="2" data-title="CHẶNG 2 – Cụm từ & Tư duy đề">
+<h2>Chặng 2: Nạp cụm từ “ăn điểm” &amp; Tư duy đề <span class="badge">7 phút</span></h2>
+<div class="data"><b>Số liệu đọc từ biểu đồ “Literacy rate by region and gender 2011”</b> (làm tròn, đơn vị %):
+<table class="t">
+<tr><th>Region</th><th>Male</th><th>Female</th></tr>
+<tr><td>Central Asia</td><td>≈ 99</td><td>≈ 100</td></tr>
+<tr><td>Central/Eastern Europe</td><td>≈ 98</td><td>≈ 98</td></tr>
+<tr><td>East Asia/Pacific</td><td>≈ 98</td><td>≈ 95</td></tr>
+<tr><td>Latin America/Caribbean</td><td>≈ 97</td><td>≈ 90</td></tr>
+<tr><td>Arab states</td><td>≈ 90</td><td>≈ 78</td></tr>
+<tr><td>South and West Asia</td><td>≈ 81</td><td>≈ 61</td></tr>
+<tr><td>Sub-Saharan Africa</td><td>≈ 70</td><td>≈ 59</td></tr>
+</table></div>
+
+<h3>2.1. Kho cụm từ cốt lõi</h3>
+<p class="inst">Chọn nghĩa tiếng Việt đúng cho mỗi cụm từ.</p>
+<table class="t">
+<tr><th style="width:45%">Cụm từ</th><th>Nghĩa</th></tr>
+<tr><td><b>1.</b> the literacy rate for men / women</td><td><select data-q="s2_1" data-type="select" data-label="2.1 – the literacy rate for men/women"><option value="">— chọn —</option><option value="a">gần 100%</option><option value="b">tỷ lệ biết chữ của nam / nữ</option><option value="c">thấp hơn nhiều so với số liệu của</option><option value="d">ở mức (+ con số)</option><option value="e">khoảng cách giữa nam và nữ</option><option value="f">cao hơn một chút so với</option><option value="g">số liệu của (một nhóm)</option></select></td></tr>
+<tr><td><b>2.</b> stand at (+ con số)</td><td><select data-q="s2_2" data-type="select" data-label="2.1 – stand at"><option value="">— chọn —</option><option value="a">gần 100%</option><option value="b">tỷ lệ biết chữ của nam / nữ</option><option value="c">thấp hơn nhiều so với số liệu của</option><option value="d">ở mức (+ con số)</option><option value="e">khoảng cách giữa nam và nữ</option><option value="f">cao hơn một chút so với</option><option value="g">số liệu của (một nhóm)</option></select></td></tr>
+<tr><td><b>3.</b> the figure for (females)</td><td><select data-q="s2_3" data-type="select" data-label="2.1 – the figure for"><option value="">— chọn —</option><option value="a">gần 100%</option><option value="b">tỷ lệ biết chữ của nam / nữ</option><option value="c">thấp hơn nhiều so với số liệu của</option><option value="d">ở mức (+ con số)</option><option value="e">khoảng cách giữa nam và nữ</option><option value="f">cao hơn một chút so với</option><option value="g">số liệu của (một nhóm)</option></select></td></tr>
+<tr><td><b>4.</b> the gender gap</td><td><select data-q="s2_4" data-type="select" data-label="2.1 – the gender gap"><option value="">— chọn —</option><option value="a">gần 100%</option><option value="b">tỷ lệ biết chữ của nam / nữ</option><option value="c">thấp hơn nhiều so với số liệu của</option><option value="d">ở mức (+ con số)</option><option value="e">khoảng cách giữa nam và nữ</option><option value="f">cao hơn một chút so với</option><option value="g">số liệu của (một nhóm)</option></select></td></tr>
+<tr><td><b>5.</b> be close to 100%</td><td><select data-q="s2_5" data-type="select" data-label="2.1 – be close to 100%"><option value="">— chọn —</option><option value="a">gần 100%</option><option value="b">tỷ lệ biết chữ của nam / nữ</option><option value="c">thấp hơn nhiều so với số liệu của</option><option value="d">ở mức (+ con số)</option><option value="e">khoảng cách giữa nam và nữ</option><option value="f">cao hơn một chút so với</option><option value="g">số liệu của (một nhóm)</option></select></td></tr>
+<tr><td><b>6.</b> slightly higher than</td><td><select data-q="s2_6" data-type="select" data-label="2.1 – slightly higher than"><option value="">— chọn —</option><option value="a">gần 100%</option><option value="b">tỷ lệ biết chữ của nam / nữ</option><option value="c">thấp hơn nhiều so với số liệu của</option><option value="d">ở mức (+ con số)</option><option value="e">khoảng cách giữa nam và nữ</option><option value="f">cao hơn một chút so với</option><option value="g">số liệu của (một nhóm)</option></select></td></tr>
+<tr><td><b>7.</b> much lower than that for</td><td><select data-q="s2_7" data-type="select" data-label="2.1 – much lower than that for"><option value="">— chọn —</option><option value="a">gần 100%</option><option value="b">tỷ lệ biết chữ của nam / nữ</option><option value="c">thấp hơn nhiều so với số liệu của</option><option value="d">ở mức (+ con số)</option><option value="e">khoảng cách giữa nam và nữ</option><option value="f">cao hơn một chút so với</option><option value="g">số liệu của (một nhóm)</option></select></td></tr>
+</table>
+
+<h3>2.2. Làm quen tư duy đề bài</h3>
+<p class="inst"><b>a)</b> Xếp mỗi khu vực vào đúng nhóm (dựa vào bảng số liệu ở trên).<br>
+<b>Nhóm A:</b> khoảng cách nam – nữ rất nhỏ (0–3 điểm %) · <b>Nhóm B:</b> khoảng cách lớn (hơn 10 điểm %)</p>
+<table class="t">
+<tr><th>Khu vực</th><th>Nhóm</th></tr>
+<tr><td>Central Asia</td><td><select data-q="s2_g1" data-type="select" data-label="2.2a – Central Asia"><option value="">— chọn —</option><option value="A">Nhóm A (gap nhỏ)</option><option value="B">Nhóm B (gap lớn)</option></select></td></tr>
+<tr><td>Arab states</td><td><select data-q="s2_g2" data-type="select" data-label="2.2a – Arab states"><option value="">— chọn —</option><option value="A">Nhóm A (gap nhỏ)</option><option value="B">Nhóm B (gap lớn)</option></select></td></tr>
+<tr><td>Central/Eastern Europe</td><td><select data-q="s2_g3" data-type="select" data-label="2.2a – Central/Eastern Europe"><option value="">— chọn —</option><option value="A">Nhóm A (gap nhỏ)</option><option value="B">Nhóm B (gap lớn)</option></select></td></tr>
+<tr><td>South and West Asia</td><td><select data-q="s2_g4" data-type="select" data-label="2.2a – South and West Asia"><option value="">— chọn —</option><option value="A">Nhóm A (gap nhỏ)</option><option value="B">Nhóm B (gap lớn)</option></select></td></tr>
+<tr><td>East Asia/Pacific</td><td><select data-q="s2_g5" data-type="select" data-label="2.2a – East Asia/Pacific"><option value="">— chọn —</option><option value="A">Nhóm A (gap nhỏ)</option><option value="B">Nhóm B (gap lớn)</option></select></td></tr>
+<tr><td>Sub-Saharan Africa</td><td><select data-q="s2_g6" data-type="select" data-label="2.2a – Sub-Saharan Africa"><option value="">— chọn —</option><option value="A">Nhóm A (gap nhỏ)</option><option value="B">Nhóm B (gap lớn)</option></select></td></tr>
+</table>
+
+<p class="inst"><b>b)</b> Câu nào là câu <b>Overview</b> (tổng quan) tốt nhất?</p>
+<div class="q" data-q="s2_ov" data-type="radio" data-label="2.2b – Overview đúng nhất">
+ <label class="opt"><input type="radio" name="s2_ov" value="A"><span>A. The bar chart shows the literacy rate by region and gender in 2011.</span></label>
+ <label class="opt"><input type="radio" name="s2_ov" value="B"><span>B. Overall, literacy rates were higher for men than for women in most regions, and the gender gap was widest in South and West Asia.</span></label>
+ <label class="opt"><input type="radio" name="s2_ov" value="C"><span>C. Overall, women in South and West Asia had a literacy rate of 61%, while men in Central Asia had 99% because schools there are better.</span></label>
+</div>
+<p class="inst"><b>c)</b> Hai câu còn lại sai ở đâu? Chọn lý do cho mỗi câu.</p>
+<table class="t">
+<tr><td style="width:45%">Câu sai thứ nhất (ghi A, B hoặc C) và lý do</td><td><select data-q="s2_w1" data-type="select" data-label="2.2c – câu sai 1"><option value="">— chọn —</option><option value="A1">Câu A – chỉ chép lại tiêu đề, không có đặc điểm chính</option><option value="A2">Câu A – có quá nhiều con số và tự giải thích lý do</option><option value="C1">Câu C – chỉ chép lại tiêu đề, không có đặc điểm chính</option><option value="C2">Câu C – có quá nhiều con số và tự giải thích lý do</option></select></td></tr>
+<tr><td>Câu sai thứ hai và lý do</td><td><select data-q="s2_w2" data-type="select" data-label="2.2c – câu sai 2"><option value="">— chọn —</option><option value="A1">Câu A – chỉ chép lại tiêu đề, không có đặc điểm chính</option><option value="A2">Câu A – có quá nhiều con số và tự giải thích lý do</option><option value="C1">Câu C – chỉ chép lại tiêu đề, không có đặc điểm chính</option><option value="C2">Câu C – có quá nhiều con số và tự giải thích lý do</option></select></td></tr>
+</table>
+</section>
+
+<section class="card" data-stage="3" data-title="CHẶNG 3 – Đoạn mẫu & Lắp câu">
+<h2>Chặng 3: Học từ đoạn mẫu &amp; Luyện lắp câu <span class="badge">8 phút</span></h2>
+<h3>3.1. Đọc và soi đoạn mẫu (mục tiêu Band 5.5–6.0)</h3>
+<p class="inst">Chọn màu bút, rồi bấm vào từng chữ để tô (bấm lại để bỏ tô).<br>
+① <b>Xanh dương:</b> tô ít nhất 3 <b>chủ ngữ số liệu</b> (VD: <i>the literacy rate for …</i>)<br>
+② <b>Vàng:</b> tô 3 <b>từ nối / cụm so sánh</b><br>
+③ <b>Xanh lá:</b> tô <b>giới từ</b> đứng ngay trước con số</p>
+<div data-q="s3_hl" data-type="hl" data-label="3.1 – Đánh dấu đoạn mẫu">
+ <div class="modes">
+  <button type="button" class="m1" data-mode="1" data-name="Chủ ngữ số liệu (xanh dương)">① Chủ ngữ số liệu</button>
+  <button type="button" class="m2" data-mode="2" data-name="Từ nối / so sánh (vàng)">② Từ nối / so sánh</button>
+  <button type="button" class="m3" data-mode="3" data-name="Giới từ trước con số (xanh lá)">③ Giới từ trước con số</button>
+  <button type="button" class="m0" data-mode="0" data-name="Xoá">Tẩy</button>
+ </div>
+ <div class="passage">In Central Asia and Central/Eastern Europe, the literacy rates for men and women were almost the same, at nearly 100%. However, there was a much bigger gap in South and West Asia. The literacy rate for males stood at about 81%, while the figure for females was only 61%. Similarly, the rate for women in Sub-Saharan Africa was much lower than that for men, at 59% and 70% respectively.</div>
+</div>
+
+<h3>3.2. Thực hành lắp ráp câu – Ghép 2 câu thành 1 câu so sánh</h3>
+<p class="inst">Dùng đúng cụm từ trong <span class="kw">ngoặc</span>. Chủ ngữ phải là <b>tỷ lệ / số liệu</b>, không phải tên khu vực đứng một mình.</p>
+<div class="q"><span class="qn">1.</span> The literacy rate for men in East Asia/Pacific was 98%. The literacy rate for women there was 95%. <span class="kw">…, while the figure for …</span>
+ <textarea data-q="s3_1" data-type="text" data-label="3.2 – Câu 1" rows="2" placeholder="Viết câu đã ghép..."></textarea></div>
+<div class="q"><span class="qn">2.</span> In the Arab states, the literacy rate for women was 78%. The literacy rate for men was 90%. <span class="kw">lower than that for</span>
+ <textarea data-q="s3_2" data-type="text" data-label="3.2 – Câu 2" rows="2" placeholder="Viết câu đã ghép..."></textarea></div>
+<div class="q"><span class="qn">3.</span> The literacy rate for males in Latin America/Caribbean was 97%. The literacy rate for females was 90%. <span class="kw">stood at … , whereas the figure for …</span>
+ <textarea data-q="s3_3" data-type="text" data-label="3.2 – Câu 3" rows="2" placeholder="Viết câu đã ghép..."></textarea></div>
+<div class="q"><span class="qn">4.</span> Sub-Saharan Africa had the lowest literacy rate for men (70%). It also had the lowest literacy rate for women (59%). <span class="kw">the lowest … for both men and women, at … respectively</span>
+ <textarea data-q="s3_4" data-type="text" data-label="3.2 – Câu 4" rows="2" placeholder="Viết câu đã ghép..."></textarea></div>
+</section>
+
+<section class="card" data-stage="4" data-title="CHẶNG 4 – Viết ngắn có khung">
+<h2>Chặng 4: Thực hành viết ngắn có khung dẫn <span class="badge">10 phút</span></h2>
+<p class="inst">Viết 4 câu. Gợi ý giảm dần: câu 1 có bảng chọn → câu 2–3 có đầu câu + từ khoá → câu 4 tự viết.</p>
+
+<div class="q"><span class="qn">Câu 1 (bảng chọn).</span> Chọn 1 ô ở mỗi cột để viết 1 câu về <b>Central/Eastern Europe</b>.
+<table class="sub"><tr>
+<td class="c">The literacy rate for<br>The figure for</td><td class="c">men<br>women</td><td class="c">in Central/Eastern Europe</td><td class="c">was<br>stood at</td><td class="c">about 98%.</td></tr></table>
+<textarea class="wc-src" data-wc="wc1" data-q="s4_1" data-type="text" data-label="Câu 1" rows="2" placeholder="Viết câu 1..."></textarea><div class="wc" id="wc1">0 từ</div></div>
+
+<div class="q"><span class="qn">Câu 2 (đầu câu + từ khoá).</span> Nữ 61% – Nam 81% ở South and West Asia.<br>
+Bắt đầu bằng: <i>In South and West Asia, the literacy rate for women …</i><br>
+Bắt buộc dùng: <span class="kw">much lower than</span><span class="kw">that for</span>
+<textarea class="wc-src" data-wc="wc2" data-q="s4_2" data-type="text" data-label="Câu 2" rows="2" placeholder="Viết câu 2..."></textarea><div class="wc" id="wc2">0 từ</div></div>
+
+<div class="q"><span class="qn">Câu 3 (đầu câu + từ khoá).</span> Ở Central Asia, tỷ lệ của nữ (≈100%) cao hơn nam (≈99%) một chút.<br>
+Bắt đầu bằng: <i>Central Asia was the only region where …</i><br>
+Bắt buộc dùng: <span class="kw">the literacy rate for women</span><span class="kw">slightly higher than</span><span class="kw">that for</span>
+<textarea class="wc-src" data-wc="wc3" data-q="s4_3" data-type="text" data-label="Câu 3" rows="2" placeholder="Viết câu 3..."></textarea><div class="wc" id="wc3">0 từ</div></div>
+
+<div class="q"><span class="qn">Câu 4 (tự viết – Overview).</span> Viết 1–2 câu Overview, <b>không ghi con số</b>, theo ý sau:<br>
+• Nhìn chung, ở phần lớn các khu vực, tỷ lệ biết chữ của nam cao hơn của nữ.<br>
+• Tỷ lệ biết chữ cao nhất ở Central Asia và thấp nhất ở Sub-Saharan Africa.<br>
+Bắt đầu bằng: <i>Overall, …</i>
+<textarea class="wc-src" data-wc="wc4" data-q="s4_4" data-type="text" data-label="Câu 4 – Overview" rows="3" placeholder="Viết câu 4..."></textarea><div class="wc" id="wc4">0 từ</div></div>
+<p class="wc">Tổng Chặng 4: <span class="wcTotal" id="wcTotal">0</span> từ</p>
+
+<div class="audit"><b>Tự kiểm tra 1 phút trước khi nộp cho giáo viên:</b>
+<label><input type="checkbox" data-q="s4_c1" data-type="check" data-label="Tự kiểm tra 1 – chủ ngữ số liệu"><span>Mình đã kiểm tra: chủ ngữ mỗi câu là <b>the literacy rate / the figure for …</b>, không phải tên khu vực hay <i>men/women</i> đứng một mình đi với con số chưa?</span></label>
+<label><input type="checkbox" data-q="s4_c2" data-type="check" data-label="Tự kiểm tra 2 – cấu trúc số liệu"><span>Mình đã kiểm tra: dùng <b>was / stood at</b>, <b>a rate of + %</b>, <b>at + %</b>, và <b>KHÔNG</b> dùng <i>increased / decreased</i> (biểu đồ chỉ có năm 2011) chưa?</span></label>
+<label><input type="checkbox" data-q="s4_c3" data-type="check" data-label="Tự kiểm tra 3 – so sánh & Overview"><span>Mình đã so sánh <b>tỷ lệ với tỷ lệ</b> (<i>higher/lower than that for …</i>) và viết Overview <b>không có con số</b> chưa?</span></label>
+</div>
+<div id="submission-panel">
+ <div class="sp-title">Submit your work</div>
+ <p class="small" style="margin:0 0 8px">Type your name, then click <b>Submit Results to Teacher</b> – your answers go straight to your teacher.</p>
+ <input type="text" id="studentNameInput" placeholder="Enter your full name...">
+ <div class="sp-btns"><button class="btn pri" id="btnSubmit" type="button">Submit Results to Teacher</button></div>
+ <div class="sp-btns">
+   <button class="btn" id="btnCopyReport" type="button">Copy Report (Offline Backup)</button>
+  <button class="btn" id="btnPrint" type="button">Print / Save PDF (Worksheet Only)</button>
+ </div>
+ <div id="submitStatus" class="status" aria-live="polite"></div>
+</div>
+</section>
+
+<section id="partB">
+<h1>PHẦN B – HƯỚNG DẪN CHẤM NHANH &amp; CẦU NỐI LÊN LỚP (Giáo viên)</h1>
+<div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:8px">
+ <button class="btn pri" id="btnClean" type="button">Tải bản HTML sạch chỉ chứa Phần A (đã xóa Phần B)</button>
+ <button class="btn" id="btnCleanCopy" type="button">Sao chép mã HTML sạch</button>
+</div>
+
+<div class="card"><h2>1. Quyết định sư phạm</h2>
+<ul>
+<li><b>T1-03 – Sai chủ ngữ số liệu:</b> học viên viết “Vietnam increased / Women stood at 78%”. Với biểu đồ 7 khu vực × 2 giới, lỗi này làm câu sai nghĩa trực tiếp (khu vực/nhóm người không “bằng” một con số). Đây cũng là gốc của lỗi so sánh sai đối tượng: <i>“the rate for men was higher than women”</i> → phải là <i>“than <u>that for</u> women”</i>.</li>
+<li><b>GRA-09 (kèm yếu tố LR-06) – Sai cấu trúc diễn đạt số liệu:</b> giới từ <i>at / of / for</i> trước con số và nhóm; dùng ngôn ngữ xu hướng (<i>increased</i>) cho biểu đồ tĩnh một năm.</li>
+<li><b>Cấu trúc so sánh</b> (higher/lower than that for, while/whereas, the lowest … respectively) được lồng vào Chặng 3.2 và Chặng 4 thay vì tách thành mã lỗi thứ ba, vì nó dựa trực tiếp trên chủ ngữ số liệu đúng.</li>
+<li><b>Tạm hoãn:</b> GRA-04 (số ít/số nhiều: <i>rate/rates</i>), CC-01 (lạm dụng từ nối), T1-02 (liệt kê máy móc – chỉ chạm nhẹ qua bài nhóm 2.2).</li>
+<li><b>Liên kết với bài Mindset 1:</b> biểu đồ cột so sánh tĩnh, 2 nhóm (Male/Female) × 7 khu vực → kỹ năng cốt lõi là nhóm số liệu theo khoảng cách giới và viết câu so sánh giữa 2 nhóm.</li>
+<li class="small">Số liệu trong phiếu là ước tính đọc từ biểu đồ (≈). Khi chấm, chấp nhận chênh ±1–2%.</li>
+</ul></div>
+
+<div class="card"><h2>2. Đáp án Chặng 1–3</h2>
+<h3>Chặng 1</h3>
+<div class="ans">1. <b>B</b> – A lấy tên khu vực làm chủ ngữ cho con số.<br>
+2. <b>A</b> – B: “Women” không thể “stood at 78%”.<br>
+3. <b>B</b> – <i>a rate <u>of</u> 81%</i> (câu bẫy: <i>at</i> chỉ dùng sau <i>stand at</i> hoặc “…, at 81%”).<br>
+4. <b>A</b> – B dùng <i>increased</i> cho biểu đồ 1 năm và sai giới từ <i>figure of</i> → <i>figure for</i>.<br>
+5. <b>B</b> – A so sánh “tỷ lệ” với “phụ nữ”; cần <i>that for women</i> (that = the literacy rate).</div>
+<h3>Chặng 2.1</h3>
+<div class="ans">1 → b (tỷ lệ biết chữ của nam/nữ) · 2 → d (ở mức) · 3 → g (số liệu của) · 4 → e (khoảng cách giữa nam và nữ) · 5 → a (gần 100%) · 6 → f (cao hơn một chút so với) · 7 → c (thấp hơn nhiều so với số liệu của)</div>
+<h3>Chặng 2.2</h3>
+<div class="ans">a) Nhóm A: Central Asia, Central/Eastern Europe, East Asia/Pacific · Nhóm B: Arab states (≈12), South and West Asia (≈20), Sub-Saharan Africa (≈11).<br>
+b) <b>B</b>.<br>
+c) Câu A – chỉ chép lại tiêu đề (A1); Câu C – quá nhiều con số và tự giải thích lý do (C2). Thứ tự hai dòng không quan trọng.</div>
+<h3>Chặng 3.1</h3>
+<div class="ans">① Chủ ngữ số liệu: <i>the literacy rates for men and women</i> · <i>The literacy rate for males</i> · <i>the figure for females</i> · <i>the rate for women in Sub-Saharan Africa</i> (đủ 3/4 là đạt).<br>
+② Từ nối / so sánh: <i>However</i> · <i>while</i> · <i>Similarly</i> (chấp nhận thêm <i>much lower than</i>, <i>almost the same</i>).<br>
+③ Giới từ trước con số: <i>at</i> (nearly 100%) · <i>at</i> (about 81%) · <i>at</i> (59% and 70%).</div>
+<h3>Chặng 3.2</h3>
+<div class="ans">1. The literacy rate for men in East Asia/Pacific was 98%, while the figure for women was 95%.<br>
+2. In the Arab states, the literacy rate for women (78%) was lower than that for men (90%).<br>
+3. The literacy rate for males in Latin America/Caribbean stood at 97%, whereas the figure for females was 90%.<br>
+4. Sub-Saharan Africa had the lowest literacy rates for both men and women, at 70% and 59% respectively.<br>
+<span class="small">Câu 4: tên khu vực làm chủ ngữ vẫn đúng vì động từ là <i>had</i> + <i>literacy rates</i> (khu vực “có” tỷ lệ) – khác với “Sub-Saharan Africa was 70%”.</span></div>
+</div>
+
+<div class="card"><h2>3. Rubric chấm nhanh Chặng 4 (3 phút)</h2>
+<h3>Đáp án tham khảo (Band 5.5–6.0)</h3>
+<div class="ans">1. The literacy rate for men in Central/Eastern Europe stood at about 98%. <span class="small">(mọi tổ hợp đúng từ bảng chọn đều đạt)</span><br>
+2. In South and West Asia, the literacy rate for women was much lower than that for men, at 61% and 81% respectively.<br>
+3. Central Asia was the only region where the literacy rate for women was slightly higher than that for men.<br>
+4. Overall, men had higher literacy rates than women in most regions. Literacy rates were highest in Central Asia and lowest in Sub-Saharan Africa.</div>
+<p><b>Chấm nhanh:</b> mỗi câu 2 điểm (1 điểm chủ ngữ số liệu + cấu trúc so sánh đúng; 1 điểm giới từ/động từ số liệu đúng) → tối đa 8 điểm. Câu 4: trừ 1 điểm nếu có con số.</p>
+<h3>3 dấu hiệu báo động</h3>
+<div class="flag"><b>① Vẫn viết “Central Asia was 99% / Women were 61%”</b> → 5 phút đầu giờ: chiếu 3 câu sai của chính học viên, cả lớp đặt câu hỏi “<i>Cái gì</i> là 99%?” rồi sửa thành “The literacy rate for …”.</div>
+<div class="flag"><b>② So sánh “than men / than women” thiếu <i>that for</i></b> → vẽ nhanh 2 cột lên bảng, chỉ vào đỉnh cột: “ta so sánh <b>cột</b> với <b>cột</b>, không phải với người” → luyện miệng 3 câu “higher/lower than that for …”.</div>
+<div class="flag"><b>③ Dùng <i>increased / rose</i> hoặc “a rate at 81%”</b> → nhắc quy tắc “1 năm = không có xu hướng”; cho học viên phân loại nhanh 6 động từ: was, stood at, accounted for / increased, fell, rose.</div>
+</div>
+
+<div class="card"><h2>4. Cầu nối vào sách Mindset 1</h2>
+<p><b>Hoạt động khởi động 4 phút – “Sửa một câu, đổi một cặp”:</b> Giáo viên chọn 4–5 câu Chặng 4 của học viên (ẩn tên), mỗi câu còn đúng 1 lỗi chủ ngữ hoặc giới từ. Học viên theo cặp sửa trong 60 giây, rồi giáo viên hỏi: “Biểu đồ trong sách có 7 khu vực – nếu chỉ chọn 2 đặc điểm để viết Overview, em chọn gì?”. Câu trả lời (nam &gt; nữ ở hầu hết khu vực; khoảng cách lớn nhất ở South and West Asia) dẫn thẳng vào bài tập phân tích biểu đồ đầu tiên trong sách.</p>
+</div>
+</section>
+
+<div class="foot">
+  <button class="btn ghost" id="btnReset" type="button">Làm lại</button>
+  <button class="btn ghost" id="teacherBtn" type="button">Dành cho Giáo viên (Mở Phần B)</button>
+  <div id="teacherZone"><input type="text" id="tcode" placeholder="Nhập mã giáo viên"><button class="btn pri" id="tgo" type="button">Mở</button></div>
+</div>
+</main>
+<div class="toast" id="toast"></div>
+<script>
+const WEBHOOK_URL = "https://script.google.com/macros/s/AKfycbysr8HPbHmzEguY8KZK_XtP3lkEpthGpTOYthsfq3FltEVqmlrdGw5jOzU7IktvlO2q8g/exec";
+const LESSON_META = {"taskType": "Task 1 - Bar Chart (Comparison)", "lessonTitle": "Mindset 1 - Writing Task 1: Literacy rate by region and gender (2011)", "targetErrors": "T1-03, GRA-09"};
+const GRADER = JSON.parse(decodeURIComponent(escape(atob("eyJzdGFnZTEiOiB7InR5cGUiOiAiY2xvc2VkIiwgIm5hbWUiOiAiMUEgTWluaW1hbC1QYWlyIiwgIml0ZW1zIjogW3sicSI6ICJzMV8xIiwgImxhYmVsIjogIlExIiwgImtleSI6ICJCIiwgImV4cGVjdGVkIjogIkIifSwgeyJxIjogInMxXzIiLCAibGFiZWwiOiAiUTIiLCAia2V5IjogIkEiLCAiZXhwZWN0ZWQiOiAiQSJ9LCB7InEiOiAiczFfMyIsICJsYWJlbCI6ICJRMyIsICJrZXkiOiAiQiIsICJleHBlY3RlZCI6ICJCIn0sIHsicSI6ICJzMV80IiwgImxhYmVsIjogIlE0IiwgImtleSI6ICJBIiwgImV4cGVjdGVkIjogIkEifSwgeyJxIjogInMxXzUiLCAibGFiZWwiOiAiUTUiLCAia2V5IjogIkIiLCAiZXhwZWN0ZWQiOiAiQiJ9XSwgIm5vdGVzIjogW3sicSI6ICJzMV8xbiIsICJsYWJlbCI6ICJRMSJ9LCB7InEiOiAiczFfMm4iLCAibGFiZWwiOiAiUTIifSwgeyJxIjogInMxXzNuIiwgImxhYmVsIjogIlEzIn0sIHsicSI6ICJzMV80biIsICJsYWJlbCI6ICJRNCJ9LCB7InEiOiAiczFfNW4iLCAibGFiZWwiOiAiUTUifV19LCAic3RhZ2UyIjogeyJwYXJ0cyI6IFt7Im5hbWUiOiAiQ2h1bmtzIiwgInNlYyI6ICIxIiwgIml0ZW1zIjogW3sicSI6ICJzMl8xIiwgImxhYmVsIjogIlExIiwgImtleSI6ICJiIiwgImV4cGVjdGVkIjogInThu7cgbOG7hyBiaeG6v3QgY2jhu68gY+G7p2EgbmFtIC8gbuG7ryJ9LCB7InEiOiAiczJfMiIsICJsYWJlbCI6ICJRMiIsICJrZXkiOiAiZCIsICJleHBlY3RlZCI6ICLhu58gbeG7qWMgKCsgY29uIHPhu5EpIn0sIHsicSI6ICJzMl8zIiwgImxhYmVsIjogIlEzIiwgImtleSI6ICJnIiwgImV4cGVjdGVkIjogInPhu5EgbGnhu4d1IGPhu6dhICht4buZdCBuaMOzbSkifSwgeyJxIjogInMyXzQiLCAibGFiZWwiOiAiUTQiLCAia2V5IjogImUiLCAiZXhwZWN0ZWQiOiAia2hv4bqjbmcgY8OhY2ggZ2nhu69hIG5hbSB2w6AgbuG7ryJ9LCB7InEiOiAiczJfNSIsICJsYWJlbCI6ICJRNSIsICJrZXkiOiAiYSIsICJleHBlY3RlZCI6ICJn4bqnbiAxMDAlIn0sIHsicSI6ICJzMl82IiwgImxhYmVsIjogIlE2IiwgImtleSI6ICJmIiwgImV4cGVjdGVkIjogImNhbyBoxqFuIG3hu5l0IGNow7p0IHNvIHbhu5tpIn0sIHsicSI6ICJzMl83IiwgImxhYmVsIjogIlE3IiwgImtleSI6ICJjIiwgImV4cGVjdGVkIjogInRo4bqlcCBoxqFuIG5oaeG7gXUgc28gduG7m2kgc+G7kSBsaeG7h3UgY+G7p2EifV19LCB7Im5hbWUiOiAiU29ydGluZy9Hcm91cGluZyIsICJzZWMiOiAiMmEiLCAiaXRlbXMiOiBbeyJxIjogInMyX2cxIiwgImxhYmVsIjogIkNlbnRyYWwgQXNpYSIsICJrZXkiOiAiQSIsICJleHBlY3RlZCI6ICJOaMOzbSBBIn0sIHsicSI6ICJzMl9nMiIsICJsYWJlbCI6ICJBcmFiIHN0YXRlcyIsICJrZXkiOiAiQiIsICJleHBlY3RlZCI6ICJOaMOzbSBCIn0sIHsicSI6ICJzMl9nMyIsICJsYWJlbCI6ICJDZW50cmFsL0Vhc3Rlcm4gRXVyb3BlIiwgImtleSI6ICJBIiwgImV4cGVjdGVkIjogIk5ow7NtIEEifSwgeyJxIjogInMyX2c0IiwgImxhYmVsIjogIlNvdXRoIGFuZCBXZXN0IEFzaWEiLCAia2V5IjogIkIiLCAiZXhwZWN0ZWQiOiAiTmjDs20gQiJ9LCB7InEiOiAiczJfZzUiLCAibGFiZWwiOiAiRWFzdCBBc2lhL1BhY2lmaWMiLCAia2V5IjogIkEiLCAiZXhwZWN0ZWQiOiAiTmjDs20gQSJ9LCB7InEiOiAiczJfZzYiLCAibGFiZWwiOiAiU3ViLVNhaGFyYW4gQWZyaWNhIiwgImtleSI6ICJCIiwgImV4cGVjdGVkIjogIk5ow7NtIEIifV19LCB7Im5hbWUiOiAiT3ZlcnZpZXcvU2NvcGUiLCAic2VjIjogIjJiLWMiLCAiaXRlbXMiOiBbeyJxIjogInMyX292IiwgImxhYmVsIjogIk92ZXJ2aWV3IE1DUSIsICJrZXkiOiAiQiIsICJleHBlY3RlZCI6ICJCIn0sIHsicXMiOiBbInMyX3cxIiwgInMyX3cyIl0sICJzZXQiOiBbIkExIiwgIkMyIl0sICJsYWJlbCI6ICJXaHkgd3JvbmciLCAiZXhwZWN0ZWQiOiAiQ8OidSBBIOKAkyBjaMOpcCB0acOqdSDEkeG7gTsgQ8OidSBDIOKAkyBxdcOhIG5oaeG7gXUgc+G7kSArIHThu7EgZ2nhuqNpIHRow61jaCJ9XX1dfSwgInN0YWdlMyI6IHsibm90aWNpbmciOiB7InEiOiAiczNfaGwiLCAidGFza3MiOiBbeyJtb2RlIjogMSwgIm5hbWUiOiAiZGF0YSBzdWJqZWN0cyIsICJuZWVkIjogMywgInBocmFzZXMiOiBbInRoZSBsaXRlcmFjeSByYXRlcyBmb3IgbWVuIGFuZCB3b21lbiIsICJUaGUgbGl0ZXJhY3kgcmF0ZSBmb3IgbWFsZXMiLCAidGhlIGZpZ3VyZSBmb3IgZmVtYWxlcyIsICJ0aGUgcmF0ZSBmb3Igd29tZW4gaW4gU3ViLVNhaGFyYW4gQWZyaWNhIl19LCB7Im1vZGUiOiAyLCAibmFtZSI6ICJsaW5rZXJzL2NvbXBhcmlzb24iLCAibmVlZCI6IDMsICJwaHJhc2VzIjogWyJIb3dldmVyIiwgIndoaWxlIiwgIlNpbWlsYXJseSIsICJtdWNoIGxvd2VyIHRoYW4iXX0sIHsibW9kZSI6IDMsICJuYW1lIjogInByZXBvc2l0aW9ucyBiZWZvcmUgbnVtYmVycyIsICJuZWVkIjogMywgInBocmFzZXMiOiBbImF0IG5lYXJseSIsICJhdCBhYm91dCIsICJhdCA1OSUiXX1dfSwgIm1hbmlwIjogeyJ0eXBlIjogIm9wZW4iLCAibmFtZSI6ICIzQiBDb21iaW5pbmciLCAiaXRlbXMiOiBbeyJxIjogInMzXzEiLCAibGFiZWwiOiAiUTEifSwgeyJxIjogInMzXzIiLCAibGFiZWwiOiAiUTIifSwgeyJxIjogInMzXzMiLCAibGFiZWwiOiAiUTMifSwgeyJxIjogInMzXzQiLCAibGFiZWwiOiAiUTQifV19fSwgInN0YWdlNCI6IFt7InEiOiAiczRfMSIsICJsYWJlbCI6ICJDMSJ9LCB7InEiOiAiczRfMiIsICJsYWJlbCI6ICJDMiJ9LCB7InEiOiAiczRfMyIsICJsYWJlbCI6ICJDMyJ9LCB7InEiOiAiczRfNCIsICJsYWJlbCI6ICJDNCJ9XSwgImF1ZGl0IjogWyJzNF9jMSIsICJzNF9jMiIsICJzNF9jMyJdfQ=="))));
+(function(){
+"use strict";
+var KEY=document.body.getAttribute("data-key");
+var PRISTINE=document.documentElement.outerHTML;
+var state={};
+try{state=JSON.parse(localStorage.getItem(KEY)||"{}")||{};}catch(e){state={};}
+function save(){try{localStorage.setItem(KEY,JSON.stringify(state));}catch(e){}updateProgress();}
+function $(s,r){return (r||document).querySelector(s);}
+function $$(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s));}
+function toast(msg){var t=$("#toast");t.textContent=msg;t.classList.add("show");clearTimeout(t._h);t._h=setTimeout(function(){t.classList.remove("show");},2600);}
+function grow(el){if(el.tagName==="TEXTAREA"){el.style.height="auto";el.style.height=(el.scrollHeight+2)+"px";}}
+function words(s){s=(s||"").trim();return s?s.split(/\s+/).length:0;}
+
+/* ---------- fields ---------- */
+$$("[data-q]").forEach(function(el){
+  var q=el.getAttribute("data-q"),type=el.getAttribute("data-type");
+  if(type==="text"||type==="select"){
+    if(state[q]!=null)el.value=state[q];
+    el.addEventListener(type==="select"?"change":"input",function(){state[q]=el.value;grow(el);updateWC();save();});
+    setTimeout(function(){grow(el);},0);
+  }else if(type==="radio"){
+    $$('input[type=radio][name="'+q+'"]',el).forEach(function(r){
+      if(state[q]===r.value)r.checked=true;
+      r.addEventListener("change",function(){if(r.checked){state[q]=r.value;save();}});
+    });
+  }else if(type==="check"){
+    if(state[q])el.checked=true;
+    el.addEventListener("change",function(){state[q]=el.checked;save();checkAudit();});
+  }else if(type==="hl"){
+    buildHL(el,q);
+  }
+});
+
+/* ---------- highlight passages ---------- */
+function buildHL(box,q){
+  var p=$(".passage",box),txt=p.textContent.trim().split(/\s+/);
+  p.innerHTML="";
+  var map=state[q]||{};
+  txt.forEach(function(w,i){
+    var s=document.createElement("span");s.className="w";s.textContent=w;s.setAttribute("data-i",i);
+    if(map[i])s.classList.add("h"+map[i]);
+    p.appendChild(s);p.appendChild(document.createTextNode(" "));
+  });
+  var mode=1;
+  $$(".modes button",box).forEach(function(b){
+    if(b.getAttribute("data-mode")==="1")b.classList.add("on");
+    b.addEventListener("click",function(){mode=parseInt(b.getAttribute("data-mode"),10);$$(".modes button",box).forEach(function(x){x.classList.remove("on");});b.classList.add("on");});
+  });
+  p.addEventListener("click",function(e){
+    var s=e.target.closest("span.w");if(!s)return;
+    var i=s.getAttribute("data-i");map=state[q]||{};
+    s.classList.remove("h1","h2","h3");
+    if(mode===0||map[i]===mode){delete map[i];}else{map[i]=mode;s.classList.add("h"+mode);}
+    state[q]=map;save();
+  });
+}
+function hlText(box,q){
+  var map=state[q]||{},spans=$$(".passage span.w",box),out={1:[],2:[],3:[]},cur=null,buf=[];
+  spans.forEach(function(s,i){var m=map[i]||0;
+    if(m!==cur){if(cur&&buf.length)out[cur].push(buf.join(" "));buf=[];cur=m;}
+    if(m)buf.push(s.textContent);});
+  if(cur&&buf.length)out[cur].push(buf.join(" "));
+  var names={};$$(".modes button",box).forEach(function(b){names[b.getAttribute("data-mode")]=b.getAttribute("data-name");});
+  return [1,2,3].map(function(m){return "   - "+names[m]+": "+(out[m].length?out[m].join(" | "):"(chưa đánh dấu)");}).join("\n");
+}
+
+/* ---------- word count ---------- */
+function updateWC(){
+  var total=0;
+  $$("textarea.wc-src, input.wc-src").forEach(function(el){var n=words(el.value);total+=n;var t=document.getElementById(el.getAttribute("data-wc"));if(t)t.textContent=n+" từ";});
+  var T=$("#wcTotal");if(T)T.textContent=total;
+}
+
+/* ---------- progress ---------- */
+function answered(el){
+  var q=el.getAttribute("data-q"),type=el.getAttribute("data-type"),v=state[q];
+  if(type==="hl")return v&&Object.keys(v).length>0;
+  if(type==="check")return !!v;
+  return v!=null&&String(v).trim()!=="";
+}
+function updateProgress(){
+  var cards=$$(".card[data-stage]"),done=0,dots=$$(".dots span");
+  cards.forEach(function(c,i){
+    var req=$$("[data-q]",c).filter(function(e){return !e.hasAttribute("data-optional");});
+    var a=req.filter(answered).length,ok=req.length&&a===req.length;
+    if(ok)done++;
+    if(dots[i])dots[i].classList.toggle("done",!!ok);
+    var frac=req.length?a/req.length:0;c._frac=frac;
+  });
+  var sum=cards.reduce(function(s,c){return s+(c._frac||0);},0);
+  $(".bar>i").style.width=Math.round(sum/cards.length*100)+"%";
+}
+function checkAudit(){
+  var all=$$(".audit input[type=checkbox]").every(function(c){return c.checked;});
+  $("#btnSubmit").classList.toggle("ready",all);
+}
+
+/* ---------- timer ---------- */
+var remain=typeof state._timer==="number"?state._timer:1800,run=null;
+function drawClock(){var m=Math.floor(remain/60),s=remain%60,c=$("#clock");c.textContent=(m<10?"0":"")+m+":"+(s<10?"0":"")+s;c.classList.toggle("warn",remain<=300);}
+$("#tStart").addEventListener("click",function(){if(run)return;run=setInterval(function(){if(remain>0){remain--;state._timer=remain;if(remain%5===0)save();drawClock();}else{clearInterval(run);run=null;toast("Hết 30 phút! Hãy rà soát và nộp bài.");}},1000);});
+$("#tPause").addEventListener("click",function(){clearInterval(run);run=null;state._timer=remain;save();});
+$("#tReset").addEventListener("click",function(){clearInterval(run);run=null;remain=1800;state._timer=remain;save();drawClock();});
+drawClock();
+
+/* ---------- elapsed time ---------- */
+function markFirst(){if(!state._firstTs){state._firstTs=Date.now();save();}}
+document.addEventListener("input",markFirst,true);document.addEventListener("change",markFirst,true);
+function elapsedSeconds(){
+  var e=0;
+  if(remain<1800)e=1800-remain;
+  else if(state._firstTs)e=Math.round((Date.now()-state._firstTs)/1000);
+  state.elapsedSeconds=e;return e;
+}
+function fmtTime(s){return Math.floor(s/60)+"m "+(s%60)+"s";}
+
+/* ---------- auto-grading helpers ---------- */
+function norm(s){return String(s||"").toLowerCase().replace(/[’']/g,"'").replace(/[^a-z0-9%'\/\- ]+/g," ").replace(/\s+/g," ").trim();}
+function rawVal(q){var v=state[q];return v==null?"":String(v).trim();}
+function shown(q,val){
+  if(!val)return "";
+  var sel=document.querySelector('select[data-q="'+q+'"]');
+  if(sel){var o=$$("option",sel).filter(function(x){return x.value===val;})[0];return o?o.textContent:val;}
+  return val;
+}
+function gradeItems(items,tag,errs){
+  var ok=0,total=0;
+  items.forEach(function(it){
+    if(it.qs){ /* order-free group */
+      var pool=it.set.slice();
+      it.qs.forEach(function(q,k){total++;var v=rawVal(q),i=pool.indexOf(v);
+        if(i>-1){ok++;pool.splice(i,1);}else errs.push("- "+tag+" "+it.label+" ("+(k+1)+"): "+(v?'chose "'+shown(q,v)+'"':"blank")+" [Expected: "+it.expected+"]");});
+      return;}
+    total++;var v=rawVal(it.q),keys=[].concat(it.key),good=keys.some(function(k){return norm(k)===norm(v);});
+    if(good)ok++;else errs.push("- "+tag+" "+it.label+": "+(v?'chose "'+shown(it.q,v)+'"':"blank")+" [Expected: "+it.expected+"]");
+  });
+  return {ok:ok,total:total};
+}
+function tokensOf(box){return $$(".passage span.w",box).map(function(s){return norm(s.textContent);});}
+function gradeNoticing(cfg,errs){
+  var box=document.querySelector('[data-q="'+cfg.q+'"]'),toks=tokensOf(box),map=state[cfg.q]||{},passed=0;
+  cfg.tasks.forEach(function(t){
+    var found=0;
+    t.phrases.forEach(function(ph){
+      var p=norm(ph).split(" "),hit=false;
+      for(var i=0;i+p.length<=toks.length&&!hit;i++){
+        var match=true;for(var j=0;j<p.length;j++){if(toks[i+j]!==p[j]){match=false;break;}}
+        if(match){var marked=0;for(var j2=0;j2<p.length;j2++){if(map[i+j2]===t.mode)marked++;}if(marked>=Math.ceil(p.length/2))hit=true;}
+      }
+      if(hit)found++;
+    });
+    if(found>=t.need)passed++;else errs.push("- S3.1 Noticing task "+t.mode+" ("+t.name+"): found "+found+"/"+t.need+" required");
+  });
+  return passed;
+}
+function openList(items,errs,tag,fmt){
+  var done=0,lines=[];
+  items.forEach(function(it,i){var v=rawVal(it.q);if(v)done++;else errs.push("- "+tag+" "+it.label+": blank");lines.push(fmt(i)+(v||"(blank)"));});
+  return {done:done,lines:lines};
+}
+function stage4Words(){var t=0;$$("textarea.wc-src, input.wc-src").forEach(function(el){t+=words(el.value);});return t;}
+
+/* ---------- payload ---------- */
+function buildSubmissionPayload(){
+  var G=GRADER,errs=[],s1,s2,s3,s4;
+  /* Stage 1 */
+  if(G.stage1.type==="closed"){
+    var r1=gradeItems(G.stage1.items,"S1",errs);
+    s1="["+G.stage1.name+"] "+r1.ok+"/"+r1.total;
+    if(G.stage1.notes){var nl=G.stage1.notes.map(function(n){return n.label+": "+(rawVal(n.q)||"(blank)");});s1+="\nNotes – "+nl.join(" | ");}
+  }else{
+    var o1=openList(G.stage1.items,errs,"S1",function(i){return "Q"+(i+1)+": ";});
+    s1="["+G.stage1.name+"] Completed: "+o1.done+"/"+G.stage1.items.length+"\n"+o1.lines.join("\n");
+  }
+  /* Stage 2 */
+  var parts=G.stage2.parts.map(function(p){var r=gradeItems(p.items,"S2."+p.sec,errs);return p.name+": "+r.ok+"/"+r.total;});
+  s2=parts[0]+" | "+parts.slice(1).join(" | ");
+  /* Stage 3 */
+  var nPass=gradeNoticing(G.stage3.noticing,errs);
+  s3="Noticing: "+nPass+"/"+G.stage3.noticing.tasks.length;
+  if(G.stage3.manip.type==="closed"){
+    var r3=gradeItems(G.stage3.manip.items,"S3.2",errs);
+    s3+=" | ["+G.stage3.manip.name+"] "+r3.ok+"/"+r3.total;
+  }else{
+    var o3=openList(G.stage3.manip.items,errs,"S3.2",function(i){return "("+(i+1)+") ";});
+    s3+=" | ["+G.stage3.manip.name+"] Completed: "+o3.done+"/"+G.stage3.manip.items.length+"\n"+o3.lines.join("\n");
+  }
+  /* Stage 4 */
+  s4=G.stage4.map(function(it){return it.label+": "+(rawVal(it.q)||"(blank)");}).join("\n");
+  var audit=G.audit.filter(function(q){return !!state[q];}).length;
+  var el=elapsedSeconds();save();
+  return {
+    studentName:$("#studentNameInput").value.trim(),
+    taskType:LESSON_META.taskType,
+    lessonTitle:LESSON_META.lessonTitle,
+    targetErrors:LESSON_META.targetErrors,
+    timeSpent:fmtTime(el),
+    stage1Summary:s1,
+    stage2Summary:s2,
+    stage3Summary:s3,
+    stage4Writing:s4,
+    stage4Meta:stage4Words()+" words | Self-Audit: "+audit+"/3",
+    errorDetails:errs.length?errs.join("\n"):"No errors detected in auto-graded items."
+  };
+}
+function reportText(p){
+  return ["WRITING WORKSHEET REPORT","Student name: "+(p.studentName||"(not entered)"),"Task type: "+p.taskType,"Lesson: "+p.lessonTitle,"Target errors: "+p.targetErrors,"Time spent: "+p.timeSpent,"","[Stage 1]",p.stage1Summary,"","[Stage 2]",p.stage2Summary,"","[Stage 3]",p.stage3Summary,"","[Stage 4 – Writing]",p.stage4Writing,"","[Stage 4 – Meta]",p.stage4Meta,"","[Error details]",p.errorDetails].join("\n");
+}
+
+/* ---------- clipboard ---------- */
+function copyText(txt,okMsg){
+  function fallback(){var ta=document.createElement("textarea");ta.value=txt;ta.style.position="fixed";ta.style.opacity="0";document.body.appendChild(ta);ta.select();var ok=false;try{ok=document.execCommand("copy");}catch(e){}document.body.removeChild(ta);toast(ok?okMsg:"Copy failed – please try another browser.");}
+  try{if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(txt).then(function(){toast(okMsg);},fallback);}else fallback();}catch(e){fallback();}
+}
+
+/* ---------- submission panel ---------- */
+var nameIn=$("#studentNameInput"),stBox=$("#submitStatus"),subBtn=$("#btnSubmit");
+if(state.studentName)nameIn.value=state.studentName;
+nameIn.addEventListener("input",function(){state.studentName=nameIn.value;save();});
+function setStatus(msg,cls){stBox.textContent=msg;stBox.className="status "+(cls||"");}
+subBtn.addEventListener("click",function(){
+  if(!nameIn.value.trim()){setStatus("Please enter your name before submitting.","err");nameIn.focus();return;}
+  var payload=buildSubmissionPayload();
+  setStatus("Submitting...","pending");subBtn.disabled=true;
+  try{
+    fetch(WEBHOOK_URL,{method:"POST",mode:"no-cors",headers:{"Content-Type":"text/plain;charset=utf-8"},body:JSON.stringify(payload)})
+    .then(function(){setStatus("Submitted successfully! Your teacher has received your results.","ok");setTimeout(function(){subBtn.disabled=false;},5000);})
+    .catch(function(){setStatus("Network error – your results were not sent. Check your connection and try again, or use \"Copy Report (Offline Backup)\".","err");subBtn.disabled=false;});
+  }catch(e){setStatus("Network error – your results were not sent. Please use \"Copy Report (Offline Backup)\".","err");subBtn.disabled=false;}
+});
+$("#btnCopyReport").addEventListener("click",function(){copyText(reportText(buildSubmissionPayload()),"Report copied! Paste it (Ctrl+V) into a message to your teacher.");});
+$("#btnPrint").addEventListener("click",function(){try{window.print();}catch(e){}setTimeout(function(){if(window.self!==window.top)toast("If the print window does not open, open the HTML file directly in your browser.");},600);});
+
+/* ---------- reset (2-step confirm) ---------- */
+var rb=$("#btnReset"),armed=null;
+rb.addEventListener("click",function(){
+  if(!armed){rb.textContent="Bấm lần nữa để XOÁ toàn bộ bài làm";rb.style.color="#C0392B";armed=setTimeout(function(){armed=null;rb.textContent="Làm lại";rb.style.color="";},4000);return;}
+  clearTimeout(armed);armed=null;try{localStorage.removeItem(KEY);}catch(e){}location.reload();
+});
+
+/* ---------- teacher mode ---------- */
+/* Mã mở khoá Phần B: GV2026 */
+$("#teacherBtn").addEventListener("click",function(){var z=$("#teacherZone");z.style.display=z.style.display==="flex"?"none":"flex";$("#tcode").focus();});
+function unlock(){if($("#tcode").value.trim()==="GV2026"){$("#partB").style.display="block";$("#teacherZone").style.display="none";$("#partB").scrollIntoView({behavior:"smooth"});}else{toast("Mã chưa đúng.");}}
+$("#tgo").addEventListener("click",unlock);
+$("#tcode").addEventListener("keydown",function(e){if(e.key==="Enter")unlock();});
+function cleanHTML(){
+  var d=new DOMParser().parseFromString(PRISTINE,"text/html");
+  ["#partB","#teacherBtn","#teacherZone"].forEach(function(s){var n=d.querySelector(s);if(n)n.parentNode.removeChild(n);});
+  var walker=d.createTreeWalker(d,NodeFilter.SHOW_COMMENT,null,false),cm=[];while(walker.nextNode())cm.push(walker.currentNode);cm.forEach(function(c){c.parentNode.removeChild(c);});
+  $$("script",d).forEach(function(s){s.textContent=s.textContent.replace(/\/\* ---------- teacher mode ---------- \*\/[\s\S]*?\/\* ---------- end teacher ---------- \*\//,"");});
+  return "<!DOCTYPE html>\n"+d.documentElement.outerHTML;
+}
+$("#btnClean").addEventListener("click",function(){
+  var html=cleanHTML();
+  try{var b=new Blob([html],{type:"text/html"}),a=document.createElement("a");a.href=URL.createObjectURL(b);a.download=KEY+"_HOC-VIEN.html";document.body.appendChild(a);a.click();document.body.removeChild(a);}catch(e){}
+  if(window.self!==window.top)toast("Nếu không thấy file tải về: dùng nút 'Sao chép mã HTML sạch' bên cạnh.");
+});
+$("#btnCleanCopy").addEventListener("click",function(){copyText(cleanHTML(),"Đã sao chép mã HTML sạch (không có Phần B). Dán vào file .html mới để gửi học viên.");});
+/* ---------- end teacher ---------- */
+
+updateWC();updateProgress();checkAudit();
+})();
+
+</script>
+</body>
+</html>

@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Phiếu bổ trợ Writing Task 2 – Consumerism: Small, independent shops</title>
+<!-- Ghi chú cho giáo viên: mã mở khoá Phần B là GV2026 -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--p:#08397A;--a:#FFBD59;--bg:#F6F8FB;--card:#FFFFFF;--line:#E2E8F0;--muted:#5B6B82;--ok:#1E8E5A;--hl1:#CFE3FF;--hl2:#FFE3A8;--hl3:#C9F0D6}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{background:var(--bg);color:#1B2A41;font-family:'Mulish',system-ui,-apple-system,sans-serif;font-size:16px;line-height:1.65}
+.wrap{max-width:880px;margin:0 auto;padding:16px 16px 60px}
+header.top{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.97);border-bottom:1px solid var(--line);box-shadow:0 2px 10px rgba(8,57,122,.06)}
+header.top .in{max-width:880px;margin:0 auto;padding:10px 16px;display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center;justify-content:space-between}
+.ttl{font-weight:800;color:var(--p);font-size:17px;line-height:1.3}
+.goals{font-size:13.5px;color:var(--muted);line-height:1.4}
+.timer{display:flex;align-items:center;gap:6px}
+.clock{font-variant-numeric:tabular-nums;font-weight:800;font-size:20px;color:var(--p);background:#EEF3FA;border-radius:8px;padding:2px 10px;min-width:78px;text-align:center}
+.clock.warn{background:#FFF1DA;color:#A35A00}
+.btn{font-family:inherit;font-size:14px;font-weight:700;border:1px solid var(--line);background:#fff;color:var(--p);border-radius:8px;padding:6px 12px;cursor:pointer}
+.btn:hover{border-color:var(--p)}
+.btn.pri{background:var(--p);color:#fff;border-color:var(--p)}
+.btn.pri:hover{background:#0B4A9E}
+.btn.ghost{background:transparent;border-color:transparent;color:var(--muted);font-weight:600}
+.prog{width:100%;display:flex;align-items:center;gap:10px}
+.bar{flex:1;height:8px;background:#E8EEF6;border-radius:99px;overflow:hidden}
+.bar>i{display:block;height:100%;width:0;background:var(--p);transition:width .3s}
+.dots{display:flex;gap:6px;font-size:12px;font-weight:700}
+.dots span{padding:1px 8px;border-radius:99px;background:#E8EEF6;color:var(--muted)}
+.dots span.done{background:var(--p);color:#fff}
+.namebox{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin:18px 0 0;display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.namebox input{flex:1;min-width:200px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px 22px;margin:18px 0}
+.card h2{margin:0 0 4px;color:var(--p);font-size:21px;line-height:1.35;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.card h3{margin:20px 0 6px;color:var(--p);font-size:17px}
+.badge{background:var(--a);color:#3D2A00;font-size:13px;font-weight:800;border-radius:99px;padding:2px 10px}
+.tip{background:#FFF6E6;border-left:5px solid var(--a);border-radius:8px;padding:10px 14px;margin:12px 0}
+.tip b{color:#7A4B00}
+.inst{color:var(--muted);font-size:15px;margin:6px 0 10px}
+.q{border-top:1px dashed var(--line);padding:12px 0}
+.q:first-of-type{border-top:none}
+.qn{font-weight:800;color:var(--p);margin-right:4px}
+.opt{display:flex;gap:10px;align-items:flex-start;border:1px solid var(--line);border-radius:10px;padding:8px 12px;margin:6px 0;cursor:pointer;background:#fff}
+.opt:hover{border-color:#9DB4D6}
+.opt input{margin-top:6px;accent-color:var(--p)}
+.opt:has(input:checked){border-color:var(--p);background:#F0F5FC}
+input[type=text],textarea,select{font-family:inherit;font-size:16px;border:1px solid #CBD5E1;border-radius:8px;padding:7px 10px;background:#fff;color:#1B2A41;width:100%}
+input[type=text]:focus,textarea:focus,select:focus{outline:2px solid #9DB4D6;border-color:var(--p)}
+textarea{resize:vertical;min-height:64px;line-height:1.6;overflow:hidden}
+.short{margin-top:6px}
+table.t{width:100%;border-collapse:collapse;margin:8px 0;font-size:15px}
+table.t th,table.t td{border:1px solid var(--line);padding:7px 9px;text-align:left;vertical-align:top}
+table.t th{background:#EEF3FA;color:var(--p)}
+table.t td select{min-width:150px}
+.data{background:#F8FAFD;border:1px solid var(--line);border-radius:10px;padding:10px 14px;margin:8px 0;font-size:15px}
+.err{background:#FDECEC;border-radius:4px;padding:0 4px;font-weight:700}
+.hint{color:var(--muted);font-size:13.5px;font-style:italic}
+.kw{display:inline-block;background:#EEF3FA;color:var(--p);border-radius:6px;padding:0 8px;margin:2px 4px 2px 0;font-weight:700;font-size:14px}
+.modes{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}
+.modes button{font-family:inherit;font-size:13.5px;font-weight:700;border-radius:99px;border:2px solid transparent;padding:4px 12px;cursor:pointer}
+.modes button.on{border-color:var(--p)}
+.m1{background:var(--hl1)}.m2{background:var(--hl2)}.m3{background:var(--hl3)}.m0{background:#fff;border:1px solid var(--line)!important}
+.passage{background:#FBFCFE;border:1px solid var(--line);border-radius:10px;padding:14px 16px;font-size:16.5px;line-height:2}
+.passage span.w{cursor:pointer;border-radius:4px;padding:1px 1px}
+.passage span.w:hover{outline:1px dashed #9DB4D6}
+.passage span.h1{background:var(--hl1)}.passage span.h2{background:var(--hl2)}.passage span.h3{background:var(--hl3)}
+.wc{font-size:13px;color:var(--muted);text-align:right}
+.wcTotal{font-weight:800;color:var(--p)}
+.sub{width:100%;border-collapse:collapse;margin:8px 0;font-size:15px}
+.sub td{border:1px solid var(--line);padding:6px 9px;vertical-align:middle;text-align:center}
+.sub td.c{background:#F8FAFD}
+.audit{background:#F0F5FC;border-radius:10px;padding:12px 16px;margin-top:16px}
+.audit label{display:flex;gap:10px;align-items:flex-start;margin:6px 0;cursor:pointer}
+.audit input{margin-top:6px;width:18px;height:18px;accent-color:var(--p)}
+#submission-panel{margin-top:18px;border:2px solid var(--p);border-radius:12px;padding:16px 18px;background:#F7FAFE}
+.sp-title{font-weight:800;color:var(--p);font-size:17px;margin-bottom:8px}
+.sp-btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
+#btnSubmit{font-weight:800;font-size:16px;padding:10px 20px;background:var(--p);color:#fff;border-color:var(--p)}
+#btnSubmit.ready{box-shadow:0 0 0 4px rgba(255,189,89,.8)}
+#btnSubmit:disabled{cursor:not-allowed;opacity:.45}
+.status{margin-top:10px;font-weight:700;font-size:15px;min-height:1.4em}
+.status.pending{color:var(--p)}.status.ok{color:var(--ok)}.status.err{color:#C0392B}
+.toast{position:fixed;left:50%;bottom:22px;transform:translateX(-50%);background:var(--p);color:#fff;padding:10px 18px;border-radius:10px;font-weight:700;opacity:0;pointer-events:none;transition:opacity .25s;z-index:50;max-width:90vw;text-align:center}
+.toast.show{opacity:1}
+.foot{margin:40px 0 0;text-align:center}
+#teacherZone{display:none;margin-top:10px;gap:8px;justify-content:center;align-items:center;flex-wrap:wrap}
+#teacherZone input{width:170px}
+#partB{display:none;margin-top:30px;border-top:4px solid var(--p);padding-top:10px}
+#partB .card{border-color:#C9D6EA}
+#partB h1{color:var(--p);font-size:22px}
+#partB li{margin:4px 0}
+.ans{background:#F1FAF5;border-left:4px solid var(--ok);padding:8px 12px;border-radius:6px;margin:6px 0}
+.flag{background:#FDF2F2;border-left:4px solid #C0392B;padding:8px 12px;border-radius:6px;margin:6px 0}
+.small{font-size:14px;color:var(--muted)}
+@media (max-width:600px){.card{padding:16px 14px}.clock{font-size:18px}.ttl{font-size:15.5px}}
+@media print{
+ header.top .timer,header.top .prog,.btn,.modes,.foot,#partB,#teacherZone,.toast,#submission-panel{display:none!important}
+ header.top{position:static;box-shadow:none;border:none}
+ body{background:#fff;font-size:12.5pt}
+ .card{break-inside:avoid-page;border:1px solid #999;margin:10px 0}
+ textarea{overflow:visible;border:1px solid #999}
+ input[type=text],select,textarea{border:1px solid #999}
+ @page{size:A4;margin:14mm}
+}
+
+</style>
+</head>
+<body data-key="mindset1_t2_consumerism_small_shops" data-lesson="Mindset 1 · Writing Task 2 (Consumerism): Small, independent shops">
+<header class="top"><div class="in">
+  <div><div class="ttl">Mindset 1 · Writing Task 2 (Consumerism): Small, independent shops</div><div class="goals">Mục tiêu: ① Dùng đúng cụm từ chủ đề mua sắm · ② Diễn đạt lại đề &amp; viết đoạn PEEL ngắn</div></div>
+  <div class="timer"><span class="clock" id="clock">30:00</span>
+    <button class="btn pri" id="tStart" type="button">Bắt đầu</button>
+    <button class="btn" id="tPause" type="button">Tạm dừng</button>
+    <button class="btn" id="tReset" type="button">Đặt lại</button></div>
+  <div class="prog"><div class="bar"><i></i></div>
+    <div class="dots"><span>C1</span><span>C2</span><span>C3</span><span>C4</span></div></div>
+</div></header>
+<main class="wrap">
+<section class="card" data-stage="1" data-title="CHẶNG 1 – Bắt bệnh lỗi quen thuộc">
+<h2>Chặng 1: “Bắt bệnh” lỗi quen thuộc <span class="badge">5 phút</span></h2>
+<div class="data"><b>Đề bài:</b> <i>Small, independent shops will have no place in the future. To what extent do you agree with this statement?</i></div>
+<div class="tip"><b>Mẹo nhớ nhanh:</b><br>
+① Không dịch từng chữ – học <b>cả cụm</b>: “mua sắm online” = <b>shop online</b> (không phải <i>buy online shopping</i>); “đưa ra giá rẻ” = <b>offer low prices</b> (không phải <i>give cheap prices</i>).<br>
+② Không chép nguyên đề: <i>small, independent shops</i> → <b>family-run shops / local shops</b>; <i>have no place</i> → <b>disappear completely</b>.</div>
+<p class="inst">Mỗi câu có <span class="err">1 cụm in đậm bị sai</span> do dịch từng chữ. Viết lại <b>cả câu</b> cho đúng.</p>
+<div class="q"><span class="qn">1.</span> Many young people now <span class="err">buy online shopping</span> because it is fast and easy.
+<input type="text" class="short" data-q="s1_1" data-type="text" data-label="Câu 1" placeholder="Viết lại câu đúng..."></div>
+<div class="q"><span class="qn">2.</span> Big supermarkets can <span class="err">give cheap prices</span> because they buy goods in large amounts.
+<input type="text" class="short" data-q="s1_2" data-type="text" data-label="Câu 2" placeholder="Viết lại câu đúng..."></div>
+<div class="q"><span class="qn">3.</span> Small shops often <span class="err">make good service</span> for their regular customers.
+<input type="text" class="short" data-q="s1_3" data-type="text" data-label="Câu 3" placeholder="Viết lại câu đúng..."></div>
+<div class="q"><span class="qn">4.</span> Many small shops have to <span class="err">close the door</span> forever because they cannot compete with online stores.
+<input type="text" class="short" data-q="s1_4" data-type="text" data-label="Câu 4" placeholder="Viết lại câu đúng..."></div>
+<div class="q"><span class="qn">5.</span> Shopping at local stores can <span class="err">help the local economic</span>.
+<input type="text" class="short" data-q="s1_5" data-type="text" data-label="Câu 5" placeholder="Viết lại câu đúng..."></div>
+</section>
+
+<section class="card" data-stage="2" data-title="CHẶNG 2 – Cụm từ & Tư duy đề">
+<h2>Chặng 2: Nạp cụm từ “ăn điểm” &amp; Tư duy đề <span class="badge">7 phút</span></h2>
+<h3>2.1. Kho cụm từ cốt lõi – chủ đề Consumerism</h3>
+<p class="inst">Chọn nghĩa tiếng Việt đúng cho mỗi cụm từ.</p>
+<table class="t">
+<tr><th style="width:45%">Cụm từ</th><th>Nghĩa</th></tr>
+<tr><td><b>1.</b> family-run shops</td><td><select data-q="s2_1" data-type="select" data-label="2.1 – family-run shops"><option value="">— chọn —</option><option value="a">biến mất hoàn toàn</option><option value="b">mua sắm trực tuyến</option><option value="c">cửa hàng nhỏ do gia đình tự kinh doanh</option><option value="d">hỗ trợ kinh tế địa phương</option><option value="e">chuỗi siêu thị lớn</option><option value="f">phục vụ tận tình, riêng cho từng khách</option><option value="g">đưa ra mức giá thấp hơn</option></select></td></tr>
+<tr><td><b>2.</b> large supermarket chains</td><td><select data-q="s2_2" data-type="select" data-label="2.1 – large supermarket chains"><option value="">— chọn —</option><option value="a">biến mất hoàn toàn</option><option value="b">mua sắm trực tuyến</option><option value="c">cửa hàng nhỏ do gia đình tự kinh doanh</option><option value="d">hỗ trợ kinh tế địa phương</option><option value="e">chuỗi siêu thị lớn</option><option value="f">phục vụ tận tình, riêng cho từng khách</option><option value="g">đưa ra mức giá thấp hơn</option></select></td></tr>
+<tr><td><b>3.</b> shop online</td><td><select data-q="s2_3" data-type="select" data-label="2.1 – shop online"><option value="">— chọn —</option><option value="a">biến mất hoàn toàn</option><option value="b">mua sắm trực tuyến</option><option value="c">cửa hàng nhỏ do gia đình tự kinh doanh</option><option value="d">hỗ trợ kinh tế địa phương</option><option value="e">chuỗi siêu thị lớn</option><option value="f">phục vụ tận tình, riêng cho từng khách</option><option value="g">đưa ra mức giá thấp hơn</option></select></td></tr>
+<tr><td><b>4.</b> offer lower prices</td><td><select data-q="s2_4" data-type="select" data-label="2.1 – offer lower prices"><option value="">— chọn —</option><option value="a">biến mất hoàn toàn</option><option value="b">mua sắm trực tuyến</option><option value="c">cửa hàng nhỏ do gia đình tự kinh doanh</option><option value="d">hỗ trợ kinh tế địa phương</option><option value="e">chuỗi siêu thị lớn</option><option value="f">phục vụ tận tình, riêng cho từng khách</option><option value="g">đưa ra mức giá thấp hơn</option></select></td></tr>
+<tr><td><b>5.</b> provide personal service</td><td><select data-q="s2_5" data-type="select" data-label="2.1 – provide personal service"><option value="">— chọn —</option><option value="a">biến mất hoàn toàn</option><option value="b">mua sắm trực tuyến</option><option value="c">cửa hàng nhỏ do gia đình tự kinh doanh</option><option value="d">hỗ trợ kinh tế địa phương</option><option value="e">chuỗi siêu thị lớn</option><option value="f">phục vụ tận tình, riêng cho từng khách</option><option value="g">đưa ra mức giá thấp hơn</option></select></td></tr>
+<tr><td><b>6.</b> support the local economy</td><td><select data-q="s2_6" data-type="select" data-label="2.1 – support the local economy"><option value="">— chọn —</option><option value="a">biến mất hoàn toàn</option><option value="b">mua sắm trực tuyến</option><option value="c">cửa hàng nhỏ do gia đình tự kinh doanh</option><option value="d">hỗ trợ kinh tế địa phương</option><option value="e">chuỗi siêu thị lớn</option><option value="f">phục vụ tận tình, riêng cho từng khách</option><option value="g">đưa ra mức giá thấp hơn</option></select></td></tr>
+<tr><td><b>7.</b> disappear completely</td><td><select data-q="s2_7" data-type="select" data-label="2.1 – disappear completely"><option value="">— chọn —</option><option value="a">biến mất hoàn toàn</option><option value="b">mua sắm trực tuyến</option><option value="c">cửa hàng nhỏ do gia đình tự kinh doanh</option><option value="d">hỗ trợ kinh tế địa phương</option><option value="e">chuỗi siêu thị lớn</option><option value="f">phục vụ tận tình, riêng cho từng khách</option><option value="g">đưa ra mức giá thấp hơn</option></select></td></tr>
+</table>
+
+<h3>2.2. Làm quen tư duy đề bài</h3>
+<p class="inst"><b>a)</b> Kiểm tra phạm vi đề.</p>
+<div class="q" data-q="s2_sc1" data-type="radio" data-label="2.2a – Đề hỏi gì?">
+ <div><span class="qn">Câu hỏi 1.</span> Đề bài yêu cầu gì?</div>
+ <label class="opt"><input type="radio" name="s2_sc1" value="A"><span>A. Nêu ưu điểm và nhược điểm của cửa hàng nhỏ.</span></label>
+ <label class="opt"><input type="radio" name="s2_sc1" value="B"><span>B. Đưa ra giải pháp giúp cửa hàng nhỏ tồn tại.</span></label>
+ <label class="opt"><input type="radio" name="s2_sc1" value="C"><span>C. Cho biết mình đồng ý đến mức nào rằng cửa hàng nhỏ sẽ không còn chỗ đứng trong tương lai.</span></label>
+</div>
+<div class="q" data-q="s2_sc2" data-type="radio" data-label="2.2a – Có cần nêu quan điểm?">
+ <div><span class="qn">Câu hỏi 2.</span> Bài viết có cần nêu quan điểm cá nhân không?</div>
+ <label class="opt"><input type="radio" name="s2_sc2" value="A"><span>A. Có – nêu rõ ngay ở mở bài và giữ đúng quan điểm đó đến kết bài.</span></label>
+ <label class="opt"><input type="radio" name="s2_sc2" value="B"><span>B. Không – chỉ cần liệt kê ý của hai phía.</span></label>
+</div>
+<p class="inst"><b>b)</b> Mỗi ý tưởng dưới đây ủng hộ phía nào?</p>
+<table class="t">
+<tr><th>Ý tưởng</th><th style="width:38%">Phía</th></tr>
+<tr><td>1. Large supermarket chains offer lower prices.</td><td><select data-q="s2_i1" data-type="select" data-label="2.2b – ý 1"><option value="">— chọn —</option><option value="AG">Đồng ý: cửa hàng nhỏ sẽ biến mất</option><option value="DIS">Không đồng ý: cửa hàng nhỏ vẫn tồn tại</option></select></td></tr>
+<tr><td>2. Small shops provide personal service and know their customers well.</td><td><select data-q="s2_i2" data-type="select" data-label="2.2b – ý 2"><option value="">— chọn —</option><option value="AG">Đồng ý: cửa hàng nhỏ sẽ biến mất</option><option value="DIS">Không đồng ý: cửa hàng nhỏ vẫn tồn tại</option></select></td></tr>
+<tr><td>3. More people shop online because it is convenient.</td><td><select data-q="s2_i3" data-type="select" data-label="2.2b – ý 3"><option value="">— chọn —</option><option value="AG">Đồng ý: cửa hàng nhỏ sẽ biến mất</option><option value="DIS">Không đồng ý: cửa hàng nhỏ vẫn tồn tại</option></select></td></tr>
+<tr><td>4. Many customers want unique, handmade products.</td><td><select data-q="s2_i4" data-type="select" data-label="2.2b – ý 4"><option value="">— chọn —</option><option value="AG">Đồng ý: cửa hàng nhỏ sẽ biến mất</option><option value="DIS">Không đồng ý: cửa hàng nhỏ vẫn tồn tại</option></select></td></tr>
+<tr><td>5. Rent in city centres is becoming too expensive for small shops.</td><td><select data-q="s2_i5" data-type="select" data-label="2.2b – ý 5"><option value="">— chọn —</option><option value="AG">Đồng ý: cửa hàng nhỏ sẽ biến mất</option><option value="DIS">Không đồng ý: cửa hàng nhỏ vẫn tồn tại</option></select></td></tr>
+<tr><td>6. Local shops are close to home, so people can buy small things quickly.</td><td><select data-q="s2_i6" data-type="select" data-label="2.2b – ý 6"><option value="">— chọn —</option><option value="AG">Đồng ý: cửa hàng nhỏ sẽ biến mất</option><option value="DIS">Không đồng ý: cửa hàng nhỏ vẫn tồn tại</option></select></td></tr>
+</table>
+</section>
+
+<section class="card" data-stage="3" data-title="CHẶNG 3 – Đoạn mẫu & Lắp câu">
+<h2>Chặng 3: Học từ đoạn mẫu &amp; Luyện lắp câu <span class="badge">8 phút</span></h2>
+<h3>3.1. Đọc và soi đoạn mẫu PEEL (mục tiêu Band 5.5–6.0)</h3>
+<p class="inst">Chọn màu bút, rồi bấm vào từng chữ để tô (bấm lại để bỏ tô).<br>
+① <b>Xanh dương:</b> tô các cụm dùng để <b>thay cho từ trong đề</b> (thay cho <i>small, independent shops</i> và <i>have no place</i>)<br>
+② <b>Vàng:</b> tô 3 <b>cụm nối</b> mở đầu câu Giải thích, Ví dụ và Kết luận<br>
+③ <b>Xanh lá:</b> tô 2 <b>cụm động từ + danh từ</b> nói về việc chủ cửa hàng làm cho khách</p>
+<div data-q="s3_hl" data-type="hl" data-label="3.1 – Đánh dấu đoạn mẫu">
+ <div class="modes">
+  <button type="button" class="m1" data-mode="1" data-name="Cụm thay cho từ trong đề (xanh dương)">① Thay cho từ trong đề</button>
+  <button type="button" class="m2" data-mode="2" data-name="Cụm nối (vàng)">② Cụm nối</button>
+  <button type="button" class="m3" data-mode="3" data-name="Động từ + danh từ (xanh lá)">③ Động từ + danh từ</button>
+  <button type="button" class="m0" data-mode="0" data-name="Xoá">Tẩy</button>
+ </div>
+ <div class="passage">In my opinion, small shops will not disappear completely. The main reason is that they provide personal service. Owners of family-run shops often know their regular customers and can give useful advice. For example, a local bakery may remember what a customer usually buys. As a result, many people will still choose these shops instead of large supermarket chains.</div>
+</div>
+
+<h3>3.2. Thực hành lắp ráp câu – Điền cụm từ</h3>
+<p class="inst">Điền cụm từ phù hợp vào chỗ trống. Có <b>1 cụm thừa</b>.</p>
+<div class="data" style="text-align:center"><span class="kw">offer lower prices</span><span class="kw">shop online</span><span class="kw">support the local economy</span><span class="kw">disappear completely</span><span class="kw">provide personal service</span></div>
+<div class="q"><span class="qn">1.</span> Large supermarket chains can ______ because they buy goods in large amounts.
+<input type="text" class="short" data-q="s3_1" data-type="text" data-label="3.2 – Câu 1" placeholder="Cụm từ cần điền..."></div>
+<div class="q"><span class="qn">2.</span> Nowadays, many young people prefer to ______ because it saves time.
+<input type="text" class="short" data-q="s3_2" data-type="text" data-label="3.2 – Câu 2" placeholder="Cụm từ cần điền..."></div>
+<div class="q"><span class="qn">3.</span> When people buy from local shops, they ______ and help to create jobs.
+<input type="text" class="short" data-q="s3_3" data-type="text" data-label="3.2 – Câu 3" placeholder="Cụm từ cần điền..."></div>
+<div class="q"><span class="qn">4.</span> Some people believe that small shops will ______ in the next twenty years.
+<input type="text" class="short" data-q="s3_4" data-type="text" data-label="3.2 – Câu 4" placeholder="Cụm từ cần điền..."></div>
+</section>
+
+<section class="card" data-stage="4" data-title="CHẶNG 4 – Viết đoạn PEEL ngắn có khung">
+<h2>Chặng 4: Thực hành viết ngắn có khung dẫn <span class="badge">10 phút</span></h2>
+<p class="inst">Viết 1 đoạn thân bài ngắn (khoảng 60 từ) cho phía <b>“Đồng ý một phần – vì sao một số cửa hàng nhỏ có thể đóng cửa”</b>. Gợi ý giảm dần qua từng câu.</p>
+
+<div class="q"><span class="qn">Câu 1 – Luận điểm (điền nốt).</span><br>
+<i>It is true that some ________ (cửa hàng nhỏ do gia đình kinh doanh) may ________ (đóng cửa) in the future.</i><br>
+<span class="hint">Viết lại cả câu, điền cụm từ đã học.</span>
+<textarea class="wc-src" data-wc="wc1" data-q="s4_1" data-type="text" data-label="Câu 1 – Luận điểm" rows="2" placeholder="Viết câu 1..."></textarea><div class="wc" id="wc1">0 từ</div></div>
+
+<div class="q"><span class="qn">Câu 2 – Giải thích (đầu câu + từ khoá).</span><br>
+Bắt đầu bằng: <i>The main reason is that …</i><br>
+Bắt buộc dùng: <span class="kw">large supermarket chains</span><span class="kw">offer lower prices</span><span class="kw">buy goods in large amounts</span>
+<textarea class="wc-src" data-wc="wc2" data-q="s4_2" data-type="text" data-label="Câu 2 – Giải thích" rows="2" placeholder="Viết câu 2..."></textarea><div class="wc" id="wc2">0 từ</div></div>
+
+<div class="q"><span class="qn">Câu 3 – Giải thích thêm (đầu câu + từ khoá).</span><br>
+Bắt đầu bằng: <i>In addition, more and more people …</i><br>
+Bắt buộc dùng: <span class="kw">shop online</span><span class="kw">convenient</span><span class="kw">at home</span>
+<textarea class="wc-src" data-wc="wc3" data-q="s4_3" data-type="text" data-label="Câu 3 – Giải thích thêm" rows="2" placeholder="Viết câu 3..."></textarea><div class="wc" id="wc3">0 từ</div></div>
+
+<div class="q"><span class="qn">Câu 4 – Ví dụ (tự viết).</span> Viết 1 câu tiếng Anh theo ý sau, mở đầu bằng <i>For example, …</i><br>
+• Ở Việt Nam, nhiều người mua quần áo qua các ứng dụng mua sắm thay vì đến cửa hàng nhỏ gần nhà.
+<textarea class="wc-src" data-wc="wc4" data-q="s4_4" data-type="text" data-label="Câu 4 – Ví dụ" rows="2" placeholder="Viết câu 4..."></textarea><div class="wc" id="wc4">0 từ</div></div>
+<p class="wc">Tổng đoạn văn: <span class="wcTotal" id="wcTotal">0</span> từ (mục tiêu 50–70 từ)</p>
+
+<div class="audit"><b>Tự kiểm tra 1 phút trước khi nộp cho giáo viên:</b>
+<label><input type="checkbox" data-q="s4_c1" data-type="check" data-label="Tự kiểm tra 1 – không dịch từng chữ"><span>Mình đã kiểm tra: <b>không dịch từng chữ</b>, đã dùng đúng cụm từ trong Kho cụm từ (VD: <i>shop online, offer lower prices, close down</i>) chưa?</span></label>
+<label><input type="checkbox" data-q="s4_c2" data-type="check" data-label="Tự kiểm tra 2 – không chép đề"><span>Mình đã kiểm tra: <b>không chép nguyên</b> cụm <i>small, independent shops / have no place</i> mà đã đổi cách diễn đạt chưa?</span></label>
+<label><input type="checkbox" data-q="s4_c3" data-type="check" data-label="Tự kiểm tra 3 – đủ PEEL"><span>Đoạn văn của mình có đủ <b>Luận điểm → Giải thích → Ví dụ</b> và trả lời đúng câu hỏi “đồng ý đến mức nào” chưa?</span></label>
+</div>
+<div id="submission-panel">
+ <div class="sp-title">Submit your work</div>
+ <p class="small" style="margin:0 0 8px">Type your name, then click <b>Submit Results to Teacher</b> – your answers go straight to your teacher.</p>
+ <input type="text" id="studentNameInput" placeholder="Enter your full name...">
+ <div class="sp-btns"><button class="btn pri" id="btnSubmit" type="button">Submit Results to Teacher</button></div>
+ <div class="sp-btns">
+   <button class="btn" id="btnCopyReport" type="button">Copy Report (Offline Backup)</button>
+  <button class="btn" id="btnPrint" type="button">Print / Save PDF (Worksheet Only)</button>
+ </div>
+ <div id="submitStatus" class="status" aria-live="polite"></div>
+</div>
+</section>
+
+<section id="partB">
+<h1>PHẦN B – HƯỚNG DẪN CHẤM NHANH &amp; CẦU NỐI LÊN LỚP (Giáo viên)</h1>
+<div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:8px">
+ <button class="btn pri" id="btnClean" type="button">Tải bản HTML sạch chỉ chứa Phần A (đã xóa Phần B)</button>
+ <button class="btn" id="btnCleanCopy" type="button">Sao chép mã HTML sạch</button>
+</div>
+
+<div class="card"><h2>1. Quyết định sư phạm</h2>
+<ul>
+<li><b>LR-01 – Dịch từng từ &amp; kết hợp từ sai:</b> học viên yếu từ vựng chủ đề Consumerism nên dễ tạo cụm không tồn tại (<i>buy online shopping, give cheap prices, make good service</i>). Đây là lỗi kéo LR xuống band 4 và làm ý tưởng khó hiểu.</li>
+<li><b>LR-04 – Chép nguyên đề / không paraphrase:</b> đề có 2 cụm khoá (<i>small, independent shops</i>, <i>have no place in the future</i>) mà học viên band 4.0–4.5 thường lặp lại nguyên văn suốt bài.</li>
+<li><b>Tạm hoãn:</b> T2-02 (lập trường mơ hồ – chỉ chạm qua câu hỏi phạm vi đề 2.2a), T2-04 (thiếu hedging – đã lồng nhẹ <i>may / some / many</i> trong đoạn mẫu và khung Chặng 4), T2-03 (lập luận suông) để buổi sau.</li>
+<li><b>Liên kết với bài Mindset 1:</b> đề “To what extent do you agree” về chủ đề mua sắm – cần vốn cụm từ cửa hàng/giá/thói quen mua sắm và quan điểm nhất quán; phiếu nạp sẵn 7 cụm từ và ngân hàng ý 2 phía.</li>
+</ul></div>
+
+<div class="card"><h2>2. Đáp án Chặng 1–3</h2>
+<h3>Chặng 1</h3>
+<div class="ans">1. Many young people now <b>shop online</b> because it is fast and easy. <span class="small">(chấp nhận: <i>buy things online</i>)</span><br>
+2. Big supermarkets can <b>offer low/lower prices</b> because they buy goods in large amounts.<br>
+3. Small shops often <b>provide good (personal) service</b> for their regular customers. <span class="small">(chấp nhận: <i>give good service to</i>)</span><br>
+4. Many small shops have to <b>close down</b> because they cannot compete with online stores. <span class="small">(câu bẫy: bỏ luôn <i>forever</i> hoặc giữ đều được)</span><br>
+5. Shopping at local stores can <b>support the local economy</b>. <span class="small">(<i>economic</i> là tính từ → cần danh từ <i>economy</i>)</span></div>
+<h3>Chặng 2.1</h3>
+<div class="ans">1 → c · 2 → e · 3 → b · 4 → g · 5 → f · 6 → d · 7 → a</div>
+<h3>Chặng 2.2</h3>
+<div class="ans">a) Câu hỏi 1: <b>C</b> · Câu hỏi 2: <b>A</b>.<br>
+b) Đồng ý (sẽ biến mất): ý 1, 3, 5 · Không đồng ý (vẫn tồn tại): ý 2, 4, 6.</div>
+<h3>Chặng 3.1</h3>
+<div class="ans">① Thay cho từ trong đề: <i>disappear completely</i> (= have no place) · <i>family-run shops</i>, <i>a local bakery</i>, <i>these shops</i> (= small, independent shops).<br>
+② Cụm nối: <i>The main reason is that</i> · <i>For example</i> · <i>As a result</i>.<br>
+③ Động từ + danh từ: <i>provide personal service</i> · <i>know their regular customers</i> · <i>give useful advice</i> (đủ 2/3 là đạt).</div>
+<h3>Chặng 3.2</h3>
+<div class="ans">1. offer lower prices · 2. shop online · 3. support the local economy · 4. disappear completely · <b>Cụm thừa:</b> provide personal service.</div>
+</div>
+
+<div class="card"><h2>3. Rubric chấm nhanh Chặng 4 (3 phút)</h2>
+<h3>Đoạn tham khảo (Band 5.5–6.0, ≈ 65 từ)</h3>
+<div class="ans">It is true that some family-run shops may close down in the future. The main reason is that large supermarket chains can offer lower prices because they buy goods in large amounts. In addition, more and more people shop online because it is convenient to buy things at home. For example, in Vietnam, many people buy clothes through shopping apps instead of visiting small shops near their homes.</div>
+<p><b>Chấm nhanh (10 điểm):</b> Câu 1: 2đ (đúng 2 cụm) · Câu 2: 3đ (đủ 3 từ khoá, đúng ngữ pháp) · Câu 3: 2đ · Câu 4: 3đ (đúng ý ví dụ + không dịch từng chữ, không chép đề).</p>
+<h3>3 dấu hiệu báo động</h3>
+<div class="flag"><b>① Vẫn còn cụm dịch từng chữ</b> (<i>buy online shopping, give cheap price, close the door</i>) → 5 phút đầu giờ: trò chơi “Đổi cụm” – giáo viên đọc cụm tiếng Việt, cả lớp nói cụm tiếng Anh trong 3 giây (7 cụm Chặng 2).</div>
+<div class="flag"><b>② Chép nguyên “small, independent shops” / “have no place”</b> → làm nhanh bảng 2 cột trên bảng: “từ trong đề” ↔ “cách nói khác”, mỗi học viên góp 1 cách nói.</div>
+<div class="flag"><b>③ Câu 4 chỉ là ý chung chung</b> (VD: “For example, many people like online shopping.”) hoặc đoạn văn đổi phía giữa chừng → chỉ ra ví dụ phải có <i>ai – làm gì – ở đâu</i>; nhắc đoạn văn chỉ bảo vệ một phía.</div>
+</div>
+
+<div class="card"><h2>4. Cầu nối vào sách Mindset 1</h2>
+<p><b>Hoạt động khởi động 4 phút – “Hai đoạn, một bài”:</b> Giáo viên chiếu 1 đoạn Chặng 4 của học viên (phía “một số cửa hàng sẽ đóng cửa”) cạnh đoạn mẫu Chặng 3.1 (phía “cửa hàng nhỏ không biến mất hoàn toàn”). Hỏi: “Nếu ghép 2 đoạn này thành 1 bài, quan điểm của người viết là gì? Câu mở bài nên nói gì?”. Học viên trả lời bằng 1 câu (VD: <i>I partly agree … some small shops may close down, but they will not disappear completely.</i>) → dẫn thẳng vào phần phân tích cấu trúc bài “To what extent” trong sách.</p>
+</div>
+</section>
+
+<div class="foot">
+  <button class="btn ghost" id="btnReset" type="button">Làm lại</button>
+  <button class="btn ghost" id="teacherBtn" type="button">Dành cho Giáo viên (Mở Phần B)</button>
+  <div id="teacherZone"><input type="text" id="tcode" placeholder="Nhập mã giáo viên"><button class="btn pri" id="tgo" type="button">Mở</button></div>
+</div>
+</main>
+<div class="toast" id="toast"></div>
+<script>
+const WEBHOOK_URL = "https://script.google.com/macros/s/AKfycbysr8HPbHmzEguY8KZK_XtP3lkEpthGpTOYthsfq3FltEVqmlrdGw5jOzU7IktvlO2q8g/exec";
+const LESSON_META = {"taskType": "Task 2 - Opinion (To what extent)", "lessonTitle": "Mindset 1 - Writing Task 2 (Consumerism): Small, independent shops", "targetErrors": "LR-01, LR-04"};
+const GRADER = JSON.parse(decodeURIComponent(escape(atob("eyJzdGFnZTEiOiB7InR5cGUiOiAib3BlbiIsICJuYW1lIjogIjFCIEN1ZWQgU3BvdHRpbmciLCAiaXRlbXMiOiBbeyJxIjogInMxXzEiLCAibGFiZWwiOiAiUTEifSwgeyJxIjogInMxXzIiLCAibGFiZWwiOiAiUTIifSwgeyJxIjogInMxXzMiLCAibGFiZWwiOiAiUTMifSwgeyJxIjogInMxXzQiLCAibGFiZWwiOiAiUTQifSwgeyJxIjogInMxXzUiLCAibGFiZWwiOiAiUTUifV19LCAic3RhZ2UyIjogeyJwYXJ0cyI6IFt7Im5hbWUiOiAiQ2h1bmtzIiwgInNlYyI6ICIxIiwgIml0ZW1zIjogW3sicSI6ICJzMl8xIiwgImxhYmVsIjogIlExIiwgImtleSI6ICJjIiwgImV4cGVjdGVkIjogImPhu61hIGjDoG5nIG5o4buPIGRvIGdpYSDEkcOsbmggdOG7sSBraW5oIGRvYW5oIn0sIHsicSI6ICJzMl8yIiwgImxhYmVsIjogIlEyIiwgImtleSI6ICJlIiwgImV4cGVjdGVkIjogImNodeG7l2kgc2nDqnUgdGjhu4sgbOG7m24ifSwgeyJxIjogInMyXzMiLCAibGFiZWwiOiAiUTMiLCAia2V5IjogImIiLCAiZXhwZWN0ZWQiOiAibXVhIHPhuq9tIHRy4buxYyB0dXnhur9uIn0sIHsicSI6ICJzMl80IiwgImxhYmVsIjogIlE0IiwgImtleSI6ICJnIiwgImV4cGVjdGVkIjogIsSRxrBhIHJhIG3hu6ljIGdpw6EgdGjhuqVwIGjGoW4ifSwgeyJxIjogInMyXzUiLCAibGFiZWwiOiAiUTUiLCAia2V5IjogImYiLCAiZXhwZWN0ZWQiOiAicGjhu6VjIHbhu6UgdOG6rW4gdMOsbmgsIHJpw6puZyBjaG8gdOG7q25nIGtow6FjaCJ9LCB7InEiOiAiczJfNiIsICJsYWJlbCI6ICJRNiIsICJrZXkiOiAiZCIsICJleHBlY3RlZCI6ICJo4buXIHRy4bujIGtpbmggdOG6vyDEkeG7i2EgcGjGsMahbmcifSwgeyJxIjogInMyXzciLCAibGFiZWwiOiAiUTciLCAia2V5IjogImEiLCAiZXhwZWN0ZWQiOiAiYmnhur9uIG3huqV0IGhvw6BuIHRvw6BuIn1dfSwgeyJuYW1lIjogIlNvcnRpbmcvR3JvdXBpbmciLCAic2VjIjogIjJiIiwgIml0ZW1zIjogW3sicSI6ICJzMl9pMSIsICJsYWJlbCI6ICJJZGVhIDEiLCAia2V5IjogIkFHIiwgImV4cGVjdGVkIjogIsSQ4buTbmcgw70ifSwgeyJxIjogInMyX2kyIiwgImxhYmVsIjogIklkZWEgMiIsICJrZXkiOiAiRElTIiwgImV4cGVjdGVkIjogIktow7RuZyDEkeG7k25nIMO9In0sIHsicSI6ICJzMl9pMyIsICJsYWJlbCI6ICJJZGVhIDMiLCAia2V5IjogIkFHIiwgImV4cGVjdGVkIjogIsSQ4buTbmcgw70ifSwgeyJxIjogInMyX2k0IiwgImxhYmVsIjogIklkZWEgNCIsICJrZXkiOiAiRElTIiwgImV4cGVjdGVkIjogIktow7RuZyDEkeG7k25nIMO9In0sIHsicSI6ICJzMl9pNSIsICJsYWJlbCI6ICJJZGVhIDUiLCAia2V5IjogIkFHIiwgImV4cGVjdGVkIjogIsSQ4buTbmcgw70ifSwgeyJxIjogInMyX2k2IiwgImxhYmVsIjogIklkZWEgNiIsICJrZXkiOiAiRElTIiwgImV4cGVjdGVkIjogIktow7RuZyDEkeG7k25nIMO9In1dfSwgeyJuYW1lIjogIk92ZXJ2aWV3L1Njb3BlIiwgInNlYyI6ICIyYSIsICJpdGVtcyI6IFt7InEiOiAiczJfc2MxIiwgImxhYmVsIjogIlNjb3BlIFExIiwgImtleSI6ICJDIiwgImV4cGVjdGVkIjogIkMifSwgeyJxIjogInMyX3NjMiIsICJsYWJlbCI6ICJTY29wZSBRMiIsICJrZXkiOiAiQSIsICJleHBlY3RlZCI6ICJBIn1dfV19LCAic3RhZ2UzIjogeyJub3RpY2luZyI6IHsicSI6ICJzM19obCIsICJ0YXNrcyI6IFt7Im1vZGUiOiAxLCAibmFtZSI6ICJwYXJhcGhyYXNlcyBvZiBwcm9tcHQgd29yZHMiLCAibmVlZCI6IDIsICJwaHJhc2VzIjogWyJkaXNhcHBlYXIgY29tcGxldGVseSIsICJmYW1pbHktcnVuIHNob3BzIiwgImEgbG9jYWwgYmFrZXJ5IiwgInRoZXNlIHNob3BzIl19LCB7Im1vZGUiOiAyLCAibmFtZSI6ICJsaW5raW5nIHBocmFzZXMiLCAibmVlZCI6IDMsICJwaHJhc2VzIjogWyJUaGUgbWFpbiByZWFzb24gaXMgdGhhdCIsICJGb3IgZXhhbXBsZSIsICJBcyBhIHJlc3VsdCJdfSwgeyJtb2RlIjogMywgIm5hbWUiOiAidmVyYiArIG5vdW4gY29sbG9jYXRpb25zIiwgIm5lZWQiOiAyLCAicGhyYXNlcyI6IFsicHJvdmlkZSBwZXJzb25hbCBzZXJ2aWNlIiwgImtub3cgdGhlaXIgcmVndWxhciBjdXN0b21lcnMiLCAiZ2l2ZSB1c2VmdWwgYWR2aWNlIl19XX0sICJtYW5pcCI6IHsidHlwZSI6ICJjbG9zZWQiLCAibmFtZSI6ICIzQyBDbG96ZSIsICJpdGVtcyI6IFt7InEiOiAiczNfMSIsICJsYWJlbCI6ICJRMSIsICJrZXkiOiBbIm9mZmVyIGxvd2VyIHByaWNlcyIsICJvZmZlciBsb3cgcHJpY2VzIl0sICJleHBlY3RlZCI6ICJvZmZlciBsb3dlciBwcmljZXMifSwgeyJxIjogInMzXzIiLCAibGFiZWwiOiAiUTIiLCAia2V5IjogWyJzaG9wIG9ubGluZSJdLCAiZXhwZWN0ZWQiOiAic2hvcCBvbmxpbmUifSwgeyJxIjogInMzXzMiLCAibGFiZWwiOiAiUTMiLCAia2V5IjogWyJzdXBwb3J0IHRoZSBsb2NhbCBlY29ub215Il0sICJleHBlY3RlZCI6ICJzdXBwb3J0IHRoZSBsb2NhbCBlY29ub215In0sIHsicSI6ICJzM180IiwgImxhYmVsIjogIlE0IiwgImtleSI6IFsiZGlzYXBwZWFyIGNvbXBsZXRlbHkiXSwgImV4cGVjdGVkIjogImRpc2FwcGVhciBjb21wbGV0ZWx5In1dfX0sICJzdGFnZTQiOiBbeyJxIjogInM0XzEiLCAibGFiZWwiOiAiQzEifSwgeyJxIjogInM0XzIiLCAibGFiZWwiOiAiQzIifSwgeyJxIjogInM0XzMiLCAibGFiZWwiOiAiQzMifSwgeyJxIjogInM0XzQiLCAibGFiZWwiOiAiQzQifV0sICJhdWRpdCI6IFsiczRfYzEiLCAiczRfYzIiLCAiczRfYzMiXX0="))));
+(function(){
+"use strict";
+var KEY=document.body.getAttribute("data-key");
+var PRISTINE=document.documentElement.outerHTML;
+var state={};
+try{state=JSON.parse(localStorage.getItem(KEY)||"{}")||{};}catch(e){state={};}
+function save(){try{localStorage.setItem(KEY,JSON.stringify(state));}catch(e){}updateProgress();}
+function $(s,r){return (r||document).querySelector(s);}
+function $$(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s));}
+function toast(msg){var t=$("#toast");t.textContent=msg;t.classList.add("show");clearTimeout(t._h);t._h=setTimeout(function(){t.classList.remove("show");},2600);}
+function grow(el){if(el.tagName==="TEXTAREA"){el.style.height="auto";el.style.height=(el.scrollHeight+2)+"px";}}
+function words(s){s=(s||"").trim();return s?s.split(/\s+/).length:0;}
+
+/* ---------- fields ---------- */
+$$("[data-q]").forEach(function(el){
+  var q=el.getAttribute("data-q"),type=el.getAttribute("data-type");
+  if(type==="text"||type==="select"){
+    if(state[q]!=null)el.value=state[q];
+    el.addEventListener(type==="select"?"change":"input",function(){state[q]=el.value;grow(el);updateWC();save();});
+    setTimeout(function(){grow(el);},0);
+  }else if(type==="radio"){
+    $$('input[type=radio][name="'+q+'"]',el).forEach(function(r){
+      if(state[q]===r.value)r.checked=true;
+      r.addEventListener("change",function(){if(r.checked){state[q]=r.value;save();}});
+    });
+  }else if(type==="check"){
+    if(state[q])el.checked=true;
+    el.addEventListener("change",function(){state[q]=el.checked;save();checkAudit();});
+  }else if(type==="hl"){
+    buildHL(el,q);
+  }
+});
+
+/* ---------- highlight passages ---------- */
+function buildHL(box,q){
+  var p=$(".passage",box),txt=p.textContent.trim().split(/\s+/);
+  p.innerHTML="";
+  var map=state[q]||{};
+  txt.forEach(function(w,i){
+    var s=document.createElement("span");s.className="w";s.textContent=w;s.setAttribute("data-i",i);
+    if(map[i])s.classList.add("h"+map[i]);
+    p.appendChild(s);p.appendChild(document.createTextNode(" "));
+  });
+  var mode=1;
+  $$(".modes button",box).forEach(function(b){
+    if(b.getAttribute("data-mode")==="1")b.classList.add("on");
+    b.addEventListener("click",function(){mode=parseInt(b.getAttribute("data-mode"),10);$$(".modes button",box).forEach(function(x){x.classList.remove("on");});b.classList.add("on");});
+  });
+  p.addEventListener("click",function(e){
+    var s=e.target.closest("span.w");if(!s)return;
+    var i=s.getAttribute("data-i");map=state[q]||{};
+    s.classList.remove("h1","h2","h3");
+    if(mode===0||map[i]===mode){delete map[i];}else{map[i]=mode;s.classList.add("h"+mode);}
+    state[q]=map;save();
+  });
+}
+function hlText(box,q){
+  var map=state[q]||{},spans=$$(".passage span.w",box),out={1:[],2:[],3:[]},cur=null,buf=[];
+  spans.forEach(function(s,i){var m=map[i]||0;
+    if(m!==cur){if(cur&&buf.length)out[cur].push(buf.join(" "));buf=[];cur=m;}
+    if(m)buf.push(s.textContent);});
+  if(cur&&buf.length)out[cur].push(buf.join(" "));
+  var names={};$$(".modes button",box).forEach(function(b){names[b.getAttribute("data-mode")]=b.getAttribute("data-name");});
+  return [1,2,3].map(function(m){return "   - "+names[m]+": "+(out[m].length?out[m].join(" | "):"(chưa đánh dấu)");}).join("\n");
+}
+
+/* ---------- word count ---------- */
+function updateWC(){
+  var total=0;
+  $$("textarea.wc-src, input.wc-src").forEach(function(el){var n=words(el.value);total+=n;var t=document.getElementById(el.getAttribute("data-wc"));if(t)t.textContent=n+" từ";});
+  var T=$("#wcTotal");if(T)T.textContent=total;
+}
+
+/* ---------- progress ---------- */
+function answered(el){
+  var q=el.getAttribute("data-q"),type=el.getAttribute("data-type"),v=state[q];
+  if(type==="hl")return v&&Object.keys(v).length>0;
+  if(type==="check")return !!v;
+  return v!=null&&String(v).trim()!=="";
+}
+function updateProgress(){
+  var cards=$$(".card[data-stage]"),done=0,dots=$$(".dots span");
+  cards.forEach(function(c,i){
+    var req=$$("[data-q]",c).filter(function(e){return !e.hasAttribute("data-optional");});
+    var a=req.filter(answered).length,ok=req.length&&a===req.length;
+    if(ok)done++;
+    if(dots[i])dots[i].classList.toggle("done",!!ok);
+    var frac=req.length?a/req.length:0;c._frac=frac;
+  });
+  var sum=cards.reduce(function(s,c){return s+(c._frac||0);},0);
+  $(".bar>i").style.width=Math.round(sum/cards.length*100)+"%";
+}
+function checkAudit(){
+  var all=$$(".audit input[type=checkbox]").every(function(c){return c.checked;});
+  $("#btnSubmit").classList.toggle("ready",all);
+}
+
+/* ---------- timer ---------- */
+var remain=typeof state._timer==="number"?state._timer:1800,run=null;
+function drawClock(){var m=Math.floor(remain/60),s=remain%60,c=$("#clock");c.textContent=(m<10?"0":"")+m+":"+(s<10?"0":"")+s;c.classList.toggle("warn",remain<=300);}
+$("#tStart").addEventListener("click",function(){if(run)return;run=setInterval(function(){if(remain>0){remain--;state._timer=remain;if(remain%5===0)save();drawClock();}else{clearInterval(run);run=null;toast("Hết 30 phút! Hãy rà soát và nộp bài.");}},1000);});
+$("#tPause").addEventListener("click",function(){clearInterval(run);run=null;state._timer=remain;save();});
+$("#tReset").addEventListener("click",function(){clearInterval(run);run=null;remain=1800;state._timer=remain;save();drawClock();});
+drawClock();
+
+/* ---------- elapsed time ---------- */
+function markFirst(){if(!state._firstTs){state._firstTs=Date.now();save();}}
+document.addEventListener("input",markFirst,true);document.addEventListener("change",markFirst,true);
+function elapsedSeconds(){
+  var e=0;
+  if(remain<1800)e=1800-remain;
+  else if(state._firstTs)e=Math.round((Date.now()-state._firstTs)/1000);
+  state.elapsedSeconds=e;return e;
+}
+function fmtTime(s){return Math.floor(s/60)+"m "+(s%60)+"s";}
+
+/* ---------- auto-grading helpers ---------- */
+function norm(s){return String(s||"").toLowerCase().replace(/[’']/g,"'").replace(/[^a-z0-9%'\/\- ]+/g," ").replace(/\s+/g," ").trim();}
+function rawVal(q){var v=state[q];return v==null?"":String(v).trim();}
+function shown(q,val){
+  if(!val)return "";
+  var sel=document.querySelector('select[data-q="'+q+'"]');
+  if(sel){var o=$$("option",sel).filter(function(x){return x.value===val;})[0];return o?o.textContent:val;}
+  return val;
+}
+function gradeItems(items,tag,errs){
+  var ok=0,total=0;
+  items.forEach(function(it){
+    if(it.qs){ /* order-free group */
+      var pool=it.set.slice();
+      it.qs.forEach(function(q,k){total++;var v=rawVal(q),i=pool.indexOf(v);
+        if(i>-1){ok++;pool.splice(i,1);}else errs.push("- "+tag+" "+it.label+" ("+(k+1)+"): "+(v?'chose "'+shown(q,v)+'"':"blank")+" [Expected: "+it.expected+"]");});
+      return;}
+    total++;var v=rawVal(it.q),keys=[].concat(it.key),good=keys.some(function(k){return norm(k)===norm(v);});
+    if(good)ok++;else errs.push("- "+tag+" "+it.label+": "+(v?'chose "'+shown(it.q,v)+'"':"blank")+" [Expected: "+it.expected+"]");
+  });
+  return {ok:ok,total:total};
+}
+function tokensOf(box){return $$(".passage span.w",box).map(function(s){return norm(s.textContent);});}
+function gradeNoticing(cfg,errs){
+  var box=document.querySelector('[data-q="'+cfg.q+'"]'),toks=tokensOf(box),map=state[cfg.q]||{},passed=0;
+  cfg.tasks.forEach(function(t){
+    var found=0;
+    t.phrases.forEach(function(ph){
+      var p=norm(ph).split(" "),hit=false;
+      for(var i=0;i+p.length<=toks.length&&!hit;i++){
+        var match=true;for(var j=0;j<p.length;j++){if(toks[i+j]!==p[j]){match=false;break;}}
+        if(match){var marked=0;for(var j2=0;j2<p.length;j2++){if(map[i+j2]===t.mode)marked++;}if(marked>=Math.ceil(p.length/2))hit=true;}
+      }
+      if(hit)found++;
+    });
+    if(found>=t.need)passed++;else errs.push("- S3.1 Noticing task "+t.mode+" ("+t.name+"): found "+found+"/"+t.need+" required");
+  });
+  return passed;
+}
+function openList(items,errs,tag,fmt){
+  var done=0,lines=[];
+  items.forEach(function(it,i){var v=rawVal(it.q);if(v)done++;else errs.push("- "+tag+" "+it.label+": blank");lines.push(fmt(i)+(v||"(blank)"));});
+  return {done:done,lines:lines};
+}
+function stage4Words(){var t=0;$$("textarea.wc-src, input.wc-src").forEach(function(el){t+=words(el.value);});return t;}
+
+/* ---------- payload ---------- */
+function buildSubmissionPayload(){
+  var G=GRADER,errs=[],s1,s2,s3,s4;
+  /* Stage 1 */
+  if(G.stage1.type==="closed"){
+    var r1=gradeItems(G.stage1.items,"S1",errs);
+    s1="["+G.stage1.name+"] "+r1.ok+"/"+r1.total;
+    if(G.stage1.notes){var nl=G.stage1.notes.map(function(n){return n.label+": "+(rawVal(n.q)||"(blank)");});s1+="\nNotes – "+nl.join(" | ");}
+  }else{
+    var o1=openList(G.stage1.items,errs,"S1",function(i){return "Q"+(i+1)+": ";});
+    s1="["+G.stage1.name+"] Completed: "+o1.done+"/"+G.stage1.items.length+"\n"+o1.lines.join("\n");
+  }
+  /* Stage 2 */
+  var parts=G.stage2.parts.map(function(p){var r=gradeItems(p.items,"S2."+p.sec,errs);return p.name+": "+r.ok+"/"+r.total;});
+  s2=parts[0]+" | "+parts.slice(1).join(" | ");
+  /* Stage 3 */
+  var nPass=gradeNoticing(G.stage3.noticing,errs);
+  s3="Noticing: "+nPass+"/"+G.stage3.noticing.tasks.length;
+  if(G.stage3.manip.type==="closed"){
+    var r3=gradeItems(G.stage3.manip.items,"S3.2",errs);
+    s3+=" | ["+G.stage3.manip.name+"] "+r3.ok+"/"+r3.total;
+  }else{
+    var o3=openList(G.stage3.manip.items,errs,"S3.2",function(i){return "("+(i+1)+") ";});
+    s3+=" | ["+G.stage3.manip.name+"] Completed: "+o3.done+"/"+G.stage3.manip.items.length+"\n"+o3.lines.join("\n");
+  }
+  /* Stage 4 */
+  s4=G.stage4.map(function(it){return it.label+": "+(rawVal(it.q)||"(blank)");}).join("\n");
+  var audit=G.audit.filter(function(q){return !!state[q];}).length;
+  var el=elapsedSeconds();save();
+  return {
+    studentName:$("#studentNameInput").value.trim(),
+    taskType:LESSON_META.taskType,
+    lessonTitle:LESSON_META.lessonTitle,
+    targetErrors:LESSON_META.targetErrors,
+    timeSpent:fmtTime(el),
+    stage1Summary:s1,
+    stage2Summary:s2,
+    stage3Summary:s3,
+    stage4Writing:s4,
+    stage4Meta:stage4Words()+" words | Self-Audit: "+audit+"/3",
+    errorDetails:errs.length?errs.join("\n"):"No errors detected in auto-graded items."
+  };
+}
+function reportText(p){
+  return ["WRITING WORKSHEET REPORT","Student name: "+(p.studentName||"(not entered)"),"Task type: "+p.taskType,"Lesson: "+p.lessonTitle,"Target errors: "+p.targetErrors,"Time spent: "+p.timeSpent,"","[Stage 1]",p.stage1Summary,"","[Stage 2]",p.stage2Summary,"","[Stage 3]",p.stage3Summary,"","[Stage 4 – Writing]",p.stage4Writing,"","[Stage 4 – Meta]",p.stage4Meta,"","[Error details]",p.errorDetails].join("\n");
+}
+
+/* ---------- clipboard ---------- */
+function copyText(txt,okMsg){
+  function fallback(){var ta=document.createElement("textarea");ta.value=txt;ta.style.position="fixed";ta.style.opacity="0";document.body.appendChild(ta);ta.select();var ok=false;try{ok=document.execCommand("copy");}catch(e){}document.body.removeChild(ta);toast(ok?okMsg:"Copy failed – please try another browser.");}
+  try{if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(txt).then(function(){toast(okMsg);},fallback);}else fallback();}catch(e){fallback();}
+}
+
+/* ---------- submission panel ---------- */
+var nameIn=$("#studentNameInput"),stBox=$("#submitStatus"),subBtn=$("#btnSubmit");
+if(state.studentName)nameIn.value=state.studentName;
+nameIn.addEventListener("input",function(){state.studentName=nameIn.value;save();});
+function setStatus(msg,cls){stBox.textContent=msg;stBox.className="status "+(cls||"");}
+subBtn.addEventListener("click",function(){
+  if(!nameIn.value.trim()){setStatus("Please enter your name before submitting.","err");nameIn.focus();return;}
+  var payload=buildSubmissionPayload();
+  setStatus("Submitting...","pending");subBtn.disabled=true;
+  try{
+    fetch(WEBHOOK_URL,{method:"POST",mode:"no-cors",headers:{"Content-Type":"text/plain;charset=utf-8"},body:JSON.stringify(payload)})
+    .then(function(){setStatus("Submitted successfully! Your teacher has received your results.","ok");setTimeout(function(){subBtn.disabled=false;},5000);})
+    .catch(function(){setStatus("Network error – your results were not sent. Check your connection and try again, or use \"Copy Report (Offline Backup)\".","err");subBtn.disabled=false;});
+  }catch(e){setStatus("Network error – your results were not sent. Please use \"Copy Report (Offline Backup)\".","err");subBtn.disabled=false;}
+});
+$("#btnCopyReport").addEventListener("click",function(){copyText(reportText(buildSubmissionPayload()),"Report copied! Paste it (Ctrl+V) into a message to your teacher.");});
+$("#btnPrint").addEventListener("click",function(){try{window.print();}catch(e){}setTimeout(function(){if(window.self!==window.top)toast("If the print window does not open, open the HTML file directly in your browser.");},600);});
+
+/* ---------- reset (2-step confirm) ---------- */
+var rb=$("#btnReset"),armed=null;
+rb.addEventListener("click",function(){
+  if(!armed){rb.textContent="Bấm lần nữa để XOÁ toàn bộ bài làm";rb.style.color="#C0392B";armed=setTimeout(function(){armed=null;rb.textContent="Làm lại";rb.style.color="";},4000);return;}
+  clearTimeout(armed);armed=null;try{localStorage.removeItem(KEY);}catch(e){}location.reload();
+});
+
+/* ---------- teacher mode ---------- */
+/* Mã mở khoá Phần B: GV2026 */
+$("#teacherBtn").addEventListener("click",function(){var z=$("#teacherZone");z.style.display=z.style.display==="flex"?"none":"flex";$("#tcode").focus();});
+function unlock(){if($("#tcode").value.trim()==="GV2026"){$("#partB").style.display="block";$("#teacherZone").style.display="none";$("#partB").scrollIntoView({behavior:"smooth"});}else{toast("Mã chưa đúng.");}}
+$("#tgo").addEventListener("click",unlock);
+$("#tcode").addEventListener("keydown",function(e){if(e.key==="Enter")unlock();});
+function cleanHTML(){
+  var d=new DOMParser().parseFromString(PRISTINE,"text/html");
+  ["#partB","#teacherBtn","#teacherZone"].forEach(function(s){var n=d.querySelector(s);if(n)n.parentNode.removeChild(n);});
+  var walker=d.createTreeWalker(d,NodeFilter.SHOW_COMMENT,null,false),cm=[];while(walker.nextNode())cm.push(walker.currentNode);cm.forEach(function(c){c.parentNode.removeChild(c);});
+  $$("script",d).forEach(function(s){s.textContent=s.textContent.replace(/\/\* ---------- teacher mode ---------- \*\/[\s\S]*?\/\* ---------- end teacher ---------- \*\//,"");});
+  return "<!DOCTYPE html>\n"+d.documentElement.outerHTML;
+}
+$("#btnClean").addEventListener("click",function(){
+  var html=cleanHTML();
+  try{var b=new Blob([html],{type:"text/html"}),a=document.createElement("a");a.href=URL.createObjectURL(b);a.download=KEY+"_HOC-VIEN.html";document.body.appendChild(a);a.click();document.body.removeChild(a);}catch(e){}
+  if(window.self!==window.top)toast("Nếu không thấy file tải về: dùng nút 'Sao chép mã HTML sạch' bên cạnh.");
+});
+$("#btnCleanCopy").addEventListener("click",function(){copyText(cleanHTML(),"Đã sao chép mã HTML sạch (không có Phần B). Dán vào file .html mới để gửi học viên.");});
+/* ---------- end teacher ---------- */
+
+updateWC();updateProgress();checkAudit();
+})();
+
+</script>
+</body>
+</html>
